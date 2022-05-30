@@ -9,6 +9,16 @@
 }
 
 
+section{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+}
 .container{
     position: relative;
     width: 100%;
@@ -17,6 +27,40 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.large{
+    width: 60%;
+    height: 100%;
+}
+.small{
+    width: 40%;
+    height: 100%;
+}
+
+
+.courses-wrapper{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-heading-wrapper{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-heading{
+    margin: 0 auto;
+    font-size: 2.4rem;
+    color: #570A57;
 }
 
 
@@ -42,6 +86,9 @@ nav{
     justify-content: space-between;
 }
 
+nav a{
+    color: #FFF;
+}
 
 .nav-left{
     width: 40%;
@@ -89,4 +136,35 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+
+.nav-right--left{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+}
+.nav-cart{
+    margin-left: 2rem;
+    outline: none;
+    fill: #fff;
+}
+
+
+.nav-right--right{
+    padding: 0 0 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    margin: 0 1rem;
+    padding: .25rem 1.75rem;
+    border: none;
+    border-radius: 8px;
+    background: aqua;
+    color: blue;
 }
