@@ -112,5 +112,50 @@
 
 
 .benefit-teacher{
-    background: aqua;
+    background: azure url('../img/benefit-teacher.svg') center/cover no-repeat;
+}
+.benefit-teacher .large{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.teachers-img{
+    width: 55vw;
+    height: auto;
+}
+
+.benefit-teacher .small{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.benefit-teacher .small h1{
+    font-size: 3rem;
+    color: navy;
+}
+.benefit-teacher .small p{
+    color: rgba(64, 12, 112, 0.781);
+}
+
+.benefit-teacher--link{
+    color: rgba(64, 12, 112, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+.benefit-teacher--arrow{
+    width: 24px;
+    height: 24px;
+    fill: rgba(64, 12, 112, 1);
+    transition: all .3s ease;
+}
+.benefit-teacher--link:hover .benefit-teacher--arrow{
+    transform: translateX(8px);
 }
