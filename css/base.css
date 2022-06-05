@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;600;700;800&display=swap');
 
+:root{
+    --colorone: #370665;
+    --colortwo: #35589A;
+    --colorthree: #F14A16;
+    --colorfour: #FC9918;
+}
+
+
 *, ::after, ::before{
     position: relative;
     margin: 0;
@@ -28,6 +36,11 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+.container-heading{
+    position: relative;
+    font-size: 3rem;
+    color: #570A57;
+}
 
 .large{
     width: 60%;
@@ -38,6 +51,9 @@ a{
     height: 100%;
 }
 
+.align-left{
+    align-items: flex-start !important;
+}
 
 .courses-wrapper{
     width: 100%;
@@ -60,7 +76,7 @@ a{
 .section-heading{
     margin: 0 auto;
     font-size: 2.4rem;
-    color: #570A57;
+    color: var(--colorone);
 }
 
 
@@ -140,10 +156,11 @@ nav a{
 
 .nav-right--left{
     padding: 0 1.5rem;
+    width: 28vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-right: 1px solid #fff;
 }
 .nav-cart{
@@ -167,4 +184,115 @@ nav a{
     border-radius: 8px;
     background: aqua;
     color: blue;
+}
+
+
+/* Footer Styling Starts Here */
+
+footer{
+    position: relative;
+    margin-top: auto;
+    padding: 2rem 1rem 0;
+    background: var(--colorone);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-heading{
+    position: relative;
+    margin-bottom: .5rem;
+    width: 100%;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.down-arrow{
+    transform: rotateZ(-90deg);
+    transition: all .5s ease;
+}
+.footer-link{
+    position: relative;
+    margin-top: 0.75rem;
+    width: 100%;
+    color: azure;
+}
+
+.footer-branding{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+.footer-desc{
+    color: azure;
+    max-width: 75%;
+}
+
+.social-heading{
+    min-width: 100px;
+    color: #FFF;
+}
+.social{
+    position: relative;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.social p{
+    text-align: center;
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    
+
+
+
+    .footer-row{
+        flex-direction: column;
+    }
+    .branding-column{
+        width: 80% !important;
+    }
+    .footer-column{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .footer-desc{
+        max-width: 100%;
+    }
 }
