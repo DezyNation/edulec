@@ -127,7 +127,7 @@
 
 .learning-family{
     padding: 0 2rem;
-    height: 70vh !important;
+    height: 80vh !important;
 }
 .equal-div{
     width: 50%;
@@ -288,4 +288,76 @@
 }
 .benefit:hover .benefit-point{
     transform: translateX(5px);
+}
+
+.index-animation{
+    width: 500px;
+    height: 500px;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero{
+        height: 80vh;
+        clip-path: unset;
+    }
+    .hero .container{
+        height: 80vh !important;
+    }
+    .hero-left, .hero-right{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .hero-left{
+        padding-top: 7rem;
+        height: 70vh !important;
+    }
+    .people-img{
+        transform: translateY(3rem);
+    }
+    .hero-left h3{
+        font-size: 1rem;
+    }
+    .hero-left h1{
+        font-size: 2.125rem;
+    }
+
+    .learning-family{
+        padding: 1rem;
+        height: 30vh !important;
+        flex-direction: row;
+    }
+    .learning-family .index-animation{
+        width: 180px;
+    }
+    .container-heading{
+        font-size: 1.25rem;
+    }
+
+    .benefit-teacher{
+        padding: 1rem;
+    }
+    .khushbu-img{
+        width: 80vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .benefit-teacher .equal-div{
+        height: auto;
+    }
+    .benefit-teacher .equal-div h1{
+        font-size: 2.2rem;
+    }
+    .khushbu-link{
+        text-align: center;
+        align-self: center;
+    }
+
+
+    .index-animation{
+        width: 320px;
+        height: 320px;
+    }
 }
