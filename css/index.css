@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(150deg, #160040, #570A57);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 65% 90%, 0% 80%);
     overflow: hidden;
 }
 
@@ -46,33 +46,33 @@
 	text-indent: 8px;
 }
 .slidingVertical span{
-	animation: topToBottom 12.5s linear infinite 0s;
-	-ms-animation: topToBottom 12.5s linear infinite 0s;
-	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+	animation: topToBottom 7.5s linear infinite 0s;
+	-ms-animation: topToBottom 7.5s linear infinite 0s;
+	-webkit-animation: topToBottom 7.5s linear infinite 0s;
 	color: #00abe9;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
 }
 .slidingVertical span:nth-child(2){
-	animation-delay: 2.5s;
-	-ms-animation-delay: 2.5s;
-	-webkit-animation-delay: 2.5s;
+	animation-delay: 1.5s;
+	-ms-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
 }
 .slidingVertical span:nth-child(3){
-	animation-delay: 5s;
-	-ms-animation-delay: 5s;
-	-webkit-animation-delay: 5s;
+	animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
 }
 .slidingVertical span:nth-child(4){
-	animation-delay: 7.5s;
-	-ms-animation-delay: 7.5s;
-	-webkit-animation-delay: 7.5s;
+	animation-delay: 4.5s;
+	-ms-animation-delay: 4.5s;
+	-webkit-animation-delay: 4.5s;
 }
 .slidingVertical span:nth-child(5){
-	animation-delay: 10s;
-	-ms-animation-delay: 10s;
-	-webkit-animation-delay: 10s;
+	animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	-webkit-animation-delay: 6s;
 }
 
 
@@ -127,7 +127,7 @@
 
 .learning-family{
     padding: 0 2rem;
-    height: 80vh !important;
+    height: 60vh !important;
 }
 .equal-div{
     width: 50%;
@@ -135,6 +135,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.learning-family .equal-div h1{
+    align-self: flex-start;
+}
+.index-explore-btn{
+    position: relative;
+    width: auto;
+    padding: .75rem 1rem;
+    border: 2px solid var(--colorone);
+    color: var(--colorone);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: flex-start;
+    border-radius: 28px;
 }
 
 
@@ -192,6 +207,7 @@
 
 
 .benefit-teacher{
+    padding: 0 2rem;
     background: #fff url('../img/benefit-teacher.svg') center/cover no-repeat;
 }
 .benefit-teacher .small{
@@ -330,10 +346,15 @@
         flex-direction: row;
     }
     .learning-family .index-animation{
-        width: 180px;
+        width: 160px;
     }
     .container-heading{
         font-size: 1.25rem;
+        align-items: unset;
+    }
+    .index-explore-btn{
+        padding: .5rem .75rem;
+        font-size: .8rem;
     }
 
     .benefit-teacher{
