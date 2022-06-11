@@ -239,6 +239,7 @@
     font-size: 3rem;
     color: var(--colorthree);
     text-align: left;
+    text-shadow: 12px 12px 24px var(--colorthree);
 }
 .benefit-teacher .equal-div p{
     color: darkslategray;
