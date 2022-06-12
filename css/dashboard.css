@@ -20,61 +20,49 @@
 
 section{
     width: 100%;
-    min-height: 100vh;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
 a{
     text-decoration: none;
 }
-.container{
-    position: relative;
-    width: 100%;
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.container-heading{
-    position: relative;
-    font-size: 3rem;
-    color: var(--colorone);
-    text-shadow: 12px 12px 24px var(--colorone);
-}
 
 
-.section-heading-wrapper{
-    width: 100%;
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.open-notifications{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    display: grid;
+    place-content: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    z-index: 10;
 }
-.section-heading{
-    margin: 0 auto;
-    font-size: 2.4rem;
-    color: var(--colorone);
-    text-shadow: 12px 12px 24px var(--colorone);
-}
-
 
 #sidepanel{
-    position: absolute;
+    position: relative;
     margin-top: 0;
     left: 0;
     padding: 1rem;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     background: azure;
     box-shadow: 4px 0 10px rgba(0,0,0,0.25);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    z-index: 50;
+    z-index: 0;
 }
 
 .sidepanel-branding{
@@ -93,7 +81,7 @@ a{
 .open-sidepanel{
     position: fixed;
     bottom: 2rem;
-    left: 2rem;
+    right: 2rem;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -140,7 +128,7 @@ a{
 .sidepanel-menu{
     position: relative;
     padding-left: .5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -152,7 +140,7 @@ a{
     position: relative;
     margin-bottom: 1rem;
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: rgb(100, 100, 255);
     display: flex;
     flex-direction: row;
@@ -177,11 +165,11 @@ a{
 
 
 .dashboard-container{
-    position: absolute;
-    top: 0;right: 0;
+    position: relative;
+    left: 0;
     width: 80vw;
-    padding: 2rem;
-    height: 100vh;
+    padding: 1rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -217,7 +205,7 @@ a{
     padding: 1rem;
     border-radius: 16px;
     background-color: #FFF;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1), -4px 0 10px rgba(0,0,0,0.1);
     transition: all .3s ease;
 }
 .card:hover{
@@ -273,20 +261,12 @@ a{
     height: auto;
 }
 
-.dashboard-courses{
-    padding-left: 1rem;
-}
+
 .courses-wrapper{
     position: relative;
     margin: 1rem auto;
     padding: 1rem 0;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: scroll;
 }
 .courses-wrapper::-webkit-scrollbar{
     display: none;
@@ -294,7 +274,6 @@ a{
 
 .course-card{
     position: relative;
-    margin: 0 1rem;
     width: 240px;
     height: 320px;
     background: #FFF;
@@ -343,6 +322,7 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    z-index: 10;
 }
 .footer-row{
     position: relative;
@@ -449,14 +429,23 @@ footer{
 
 @media (max-width: 768px) {
 
+    section{
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
     #sidepanel{
         position: fixed;
         left: -100vw;
         width: 100%;
-        height: 100vh;
+        height: 125vh;
         z-index: 50;
         box-shadow: unset;
         transition: all .3s ease;
+    }
+    .sidepanel-branding{
+        margin-bottom: 2rem;
     }
 
     .open-sidepanel{
@@ -474,17 +463,21 @@ footer{
         display: none;
     }
 
-    .dashboard-container{
-        width: 100%;
-        padding: 0rem;
-    }
     .row{
         padding: 0;
     }
 
+    .dashboard-container{
+        padding: 0 0 4rem;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
     .card{
+        margin: .65rem;
         padding: .5rem;
-        width: 40%;
+        width: 42.5%;
     }
     .dashboard-profile-card{
         width: 100%;
@@ -503,14 +496,10 @@ footer{
     .dashboard-courses{
         padding: 0;
     }
-    .courses-wrapper{
-        padding: 0;
-        flex-direction: column;
-    }
-    .course-card{
-        margin: 1rem auto;
-        width: 85vw !important;
-        height: 320px !important;
+    .swiper-wrapper{
+        position: relative;
+        width: 100%;
+        padding-left: 3.6rem;
     }
 
     .footer-row{
