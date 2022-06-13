@@ -31,6 +31,18 @@ a{
     text-decoration: none;
 }
 
+#wrapper{
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 
 .open-notifications{
     position: fixed;
@@ -57,7 +69,7 @@ a{
     width: 20vw;
     height: auto;
     background: azure;
-    box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+    box-shadow: 4px 0 10px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -66,7 +78,7 @@ a{
 }
 
 .sidepanel-branding{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -75,7 +87,6 @@ a{
     font-family: 'Montserrat', sans-serif;
     color: #222;
     font-size: .9rem;
-    /* border-right: 2px solid #FFF ; */
 }
 
 .open-sidepanel{
@@ -169,7 +180,7 @@ a{
     left: 0;
     width: 80vw;
     padding: 1rem;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -177,14 +188,29 @@ a{
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.dashboard-container::-webkit-scrollbar{
-    display: none;
+.dashboard-container::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Track */
+.dashboard-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.dashboard-container::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185); 
+  border-radius: 16px;
+}
+
 .dashboard-title{
     position: relative;
     margin-top: 2rem;
     padding-left: 1rem;
 }
+
+
+/* Main Dashboard Styling */
 
 .row{
     position: relative;
@@ -310,6 +336,123 @@ a{
     margin-bottom: 1rem;
 }
 
+/* Main Dashboard Styling Ends */
+
+
+
+/* Student Styling */
+
+.student-card{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.student-card--img{
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: center;
+}
+.card-name{
+    margin-top: .25rem;
+    font-weight: 600;
+    color: darkslategray;
+}
+.card-data{
+    position: relative;
+    margin-top: .25rem;
+    width: 100%;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-data p{
+    color: #000;
+}
+.card-data--colorone{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--colorone);
+}
+.card-data--colortwo{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--colortwo);
+}
+.card-data--colorthree{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--colorthree);
+}
+.card-data--colorfour{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--colorfour);
+}
+
+/* Student Styling Ends */
+
+
+
+
+/* Courses Card Styling */
+
+.dashcourse-card{
+    position: relative;
+    width: 300px;
+}
+.dashcourse-card--video{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+.dashcourse-card--tutor{
+    position: relative;
+    font-size: .9rem;
+}
+
+/* Courses Card Styling Ends */
+
+
+/* Certificates Styling */
+
+.dashcertificate-img{
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+.dashcertificate-download{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #FFF;
+    display: grid;
+    place-content: center;
+    background: var(--colorfour);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: all .3s ease;
+}
+.dashcertificate-download:hover{
+    background: var(--colorthree);
+}
+
+/* Certificates Styling Ends Here */
+
+
+
+
 
 /* Footer Styling Starts Here */
 
@@ -434,6 +577,10 @@ footer{
         margin-left: 0;
         width: 100%;
     }
+    #wrapper{
+        align-items: flex-start;
+        justify-content: center;
+    }
 
     #sidepanel{
         position: fixed;
@@ -463,8 +610,13 @@ footer{
         display: none;
     }
 
+
+    /* Main Dashboard Styling */
+
     .row{
         padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .dashboard-container{
@@ -472,6 +624,9 @@ footer{
         left: 0;
         width: 100%;
         height: auto;
+    }
+    .dashboard-container::-webkit-scrollbar{
+        display: none !important;
     }
 
     .card{
@@ -501,6 +656,42 @@ footer{
         width: 100%;
         padding-left: 3.6rem;
     }
+
+    /* Main Dashboard Styling Ends */
+
+
+
+    /* Students Styling */
+
+    .student-card{
+        width: 42vw;
+        margin: .75rem .75rem;
+        padding: .75rem;
+    }
+    .student-card--img{
+        width: 60px;
+        height: 60px;
+    }
+    .card-name{
+        font-size: .9rem;
+    }
+    .card-data p, .card-data h5{
+        font-size: .75rem;
+    }
+
+    /* Students Styling Ends */
+
+
+    /* Courses Styling */
+
+    .dashcourse-card{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* Courses Styling Ends */
+
+
 
     .footer-row{
         flex-direction: column;
