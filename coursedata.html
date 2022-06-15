@@ -185,47 +185,69 @@
 </header>
 
 <section>
-    <div id="wrapper" class="vertical-wrapper">
-        <h1 class="courses-section-heading">Your Learning Journey Starts Here!</h1>
-        <div class="courses-section-row">
-            <p>Choose your preferred languages: </p>
-            <div class="language-filter-wrapper">
-                <button class="language-filter">Hindi</button>
-                <button class="language-filter">English</button>
-                <button class="language-filter">Gujrati</button>
-                <button class="language-filter">Marathi</button>
+    <div id="wrapper" class="courseinfo-section vertical-wrapper">
+
+        <div class="flex horizontal-wrapper">
+            <div class="flex vertical-wrapper align-start large">
+                <div class="course-info-wrapper">
+                    <h1 class="course-title">Microsoft Excel Advanced</h1>
+                    <p>Taught by Khushbu Mali</p>
+                    <br><br>
+                    <h3>Things you will learn in this course:</h3>
+                    <div class="course-keypoint-row">
+                        <p class="keypoint-no">1</p>
+                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-keypoint-row">
+                        <p class="keypoint-no">2</p>
+                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-keypoint-row">
+                        <p class="keypoint-no">3</p>
+                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-keypoint-row">
+                        <p class="keypoint-no">4</p>
+                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-keypoint-row">
+                        <p class="keypoint-no">5</p>
+                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="course-info-wrapper">
+                    <h1 class="course-title">More Info</h1>
+                    <br><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo alias perferendis minima officia nisi vero molestias harum consequatur perspiciatis vitae enim vel atque quod nostrum, repudiandae debitis quos earum explicabo, suscipit ipsa numquam? Molestiae, illo?</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo alias perferendis minima officia nisi vero molestias harum consequatur perspiciatis vitae enim vel atque quod nostrum, repudiandae debitis quos earum explicabo, suscipit ipsa numquam? Molestiae, illo?</p>
+                </div>
+            </div>
+            <div class="flex vertical-wrapper align-start small">
+                <iframe src="https://www.youtube.com/embed/DduGnrec8Is" title="YouTube video player" class="course-intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="course-benefits-card">
+                    <h4>Benefits of this course</h4>
+                    <div class="course-benefit-row">
+                        <p class="benefit-no">1</p>
+                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-benefit-row">
+                        <p class="benefit-no">2</p>
+                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="course-benefit-row">
+                        <p class="benefit-no">3</p>
+                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <a href="#" class="syllabus-btn">Download Syllabus</a>
+                </div>
             </div>
         </div>
 
-        <div class="courses-wrapper">
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
-            </div>
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
-            </div>
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
-            </div>
-        </div>
     </div>
 </section>
 
+<a href="#" class="buy-course"><i class="bi bi-cart-check-fill"></i></a>
 
     <!-- Footer starts here -->
     <footer>
@@ -278,54 +300,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        slidesPerView: 4,
-        spaceBetween: 15,
-        autoHeight: true,
-        direction: 'horizontal',
-        loop: true,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                width: 240,
-                centeredSlides: true,
-                centeredSlidesBounds: true,
-                slidesPerView: 1,
-            },
-            // when window width is >= 480px
-            480: {
-            slidesPerView: 2,
-            spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-            slidesPerView: 4,
-            spaceBetween: 20
-            }
-        },
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-    </script>
 
 </body>
 </html>

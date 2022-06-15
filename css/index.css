@@ -150,7 +150,13 @@
     text-transform: uppercase;
     align-self: flex-start;
     border-radius: 28px;
+    transition: all .3s ease;
 }
+.index-explore-btn:hover{
+    background: var(--colorone);
+    color: #FFF;
+}
+
 
 
 .index-courses{
