@@ -7,10 +7,9 @@
     <title>Edulec</title>
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/affiliateform.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -64,7 +63,7 @@
     <aside id="mobile-nav">
         <div class="mobile-menu">
             <a href="affiliateform.html" class="mobile-menu--item">Affiliate Area</a>
-            <a href="job.html" class="mobile-menu--item">Get a Job</a>
+            <a href="#" class="mobile-menu--item">Get a Job</a>
             <a href="#" class="mobile-menu--item">Corporate Subscription</a>
         </div>
 
@@ -173,7 +172,7 @@
         <div class="nav-right">
             <div class="nav-right--left">
                 <a href="affiliateform.html">Affiliate Area</a>
-                <a href="job.html" class="nav-get-job">Get a Job</a>
+                <a href="#" class="nav-get-job">Get a Job</a>
                 <a href="#">Corporate Subscription</a>
             </div>
             <div class="nav-right--right">
@@ -185,42 +184,46 @@
 </header>
 
 <section>
-    <div id="wrapper" class="vertical-wrapper">
-        <h1 class="courses-section-heading">Your Learning Journey Starts Here!</h1>
-        <div class="courses-section-row">
-            <p>Choose your preferred languages: </p>
-            <div class="language-filter-wrapper">
-                <button class="language-filter">Hindi</button>
-                <button class="language-filter">English</button>
-                <button class="language-filter">Gujrati</button>
-                <button class="language-filter">Marathi</button>
-            </div>
+    <div id="wrapper" class="job-wrapper">
+        <div class="left">
+            <center><h1 class="affiliate-form-wrapper--title">Work With Edulec</h1></center>
+            <form action="#" class="affiliate-form">
+                <center><p>Send us your application for available job </p></center>
+                <br>
+                <div class="affiliate-form-row">
+                    <label for="name" class="affiliate-form-label">Your Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="affiliate-form-row">
+                    <label for="name" class="affiliate-form-label">Your Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="affiliate-form-row">
+                    <label for="name" class="affiliate-form-label">Your Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="affiliate-form-row">
+                    <label for="name" class="affiliate-form-label">Where did you get to know about us?</label>
+                    <input type="text" name="channel">
+                </div>
+                <div class="affiliate-form-row">
+                    <label for="name" class="affiliate-form-label">Select your preferred job position</label>
+                    <div class="form-input-row"><input type="radio" name="position" id="tutor" value="Tutor" class="position-option"><p>Tutor</p></div>
+                    <div class="form-input-row"><input type="radio" name="position" id="tutor" value="Content Creator" class="position-option"><p>Content Creator</p></div>
+                    <div class="form-input-row"><input type="radio" name="position" id="tutor" value="Developer" class="position-option"><p>Developer</p></div>
+                </div>
+                <label for="resume" class="affiliate-form-label">Upload Your Resume</label>
+                <br>
+                <input type="file" name="resume" id="resume">
+                <button type="submit" class="affiliate-form-submit">Send Details!</button>
+            </form>
         </div>
-
-        <div class="courses-wrapper">
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
-            </div>
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
-            </div>
-            <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
-                </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
+        <div class="right">
+            <div class="card sponsored-card">
+                <h1>Did you know?</h1>
+                <p>You can also earn by refering our courses to your friends!</p>
+                <br>
+                <a href="affiliateform.html">Join Now</a>
             </div>
         </div>
     </div>
@@ -280,52 +283,6 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        slidesPerView: 4,
-        spaceBetween: 15,
-        autoHeight: true,
-        direction: 'horizontal',
-        loop: true,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                width: 240,
-                centeredSlides: true,
-                centeredSlidesBounds: true,
-                slidesPerView: 1,
-            },
-            // when window width is >= 480px
-            480: {
-            slidesPerView: 2,
-            spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-            slidesPerView: 4,
-            spaceBetween: 20
-            }
-        },
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-    </script>
 
 </body>
 </html>
