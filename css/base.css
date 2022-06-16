@@ -41,7 +41,7 @@ a{
     position: relative;
     font-size: 3rem;
     color: var(--colorone);
-    text-shadow: 12px 12px 24px var(--colorone);
+    text-shadow: 12px 12px 24px #3706657e;
 }
 
 .large{
@@ -79,7 +79,7 @@ a{
     margin: 0 auto;
     font-size: 2.4rem;
     color: var(--colorone);
-    text-shadow: 12px 12px 24px var(--colorone);
+    text-shadow: 12px 12px 24px #3706657e;
 }
 
 
@@ -413,6 +413,10 @@ footer{
     .footer-desc{
         max-width: 100%;
     }
+
+    .hide-mobile{
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
@@ -420,6 +424,10 @@ footer{
         display: none;
     }
     .mobile-nav-top{
+        display: none;
+    }
+
+    .hide-desktop{
         display: none;
     }
 }
