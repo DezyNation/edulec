@@ -44,6 +44,10 @@ a{
     text-shadow: 12px 12px 24px #3706657e;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .large{
     width: 60%;
     height: 100%;

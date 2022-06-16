@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/course.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -65,7 +64,7 @@
         <div class="mobile-menu">
             <a href="affiliateform.html" class="mobile-menu--item">Affiliate Area</a>
             <a href="job.html" class="mobile-menu--item">Get a Job</a>
-            <a href="#" class="mobile-menu--item">Corporate Subscription</a>
+            <a href="subscription.html" class="mobile-menu--item">Corporate Subscription</a>
         </div>
 
         <div class="mobile-menu">
@@ -165,16 +164,12 @@
                 &nbsp;&nbsp;                    
                 <h2>EDULEC</h2>
             </a>
-            <!-- <div class="nav-categories">
-                <svg id="menu-alt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24"><path id="primary" d="M10,10H3V3h7ZM21,3H14v7h7ZM10,14H3v7h7Zm11,0H14v7h7Z" style="fill: #fff; stroke: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
-                <p>Categories</p>
-            </div> -->
         </div>
         <div class="nav-right">
             <div class="nav-right--left">
                 <a href="affiliateform.html">Affiliate Area</a>
                 <a href="job.html" class="nav-get-job">Get a Job</a>
-                <a href="#">Corporate Subscription</a>
+                <a href="subscription.html">Corporate Subscription</a>
             </div>
             <div class="nav-right--right">
                 <a href="register.html" class="register"><p>REGISTER</p></a>
@@ -186,7 +181,7 @@
 
 <section>
     <div id="wrapper" class="vertical-wrapper">
-        <h1 class="courses-section-heading">Your Learning Journey Starts Here!</h1>
+        <h1 class="section-heading text-center">Your Learning Journey Starts Here!</h1>
         <div class="courses-section-row">
             <p>Choose your preferred languages: </p>
             <div class="language-filter-wrapper">
@@ -278,54 +273,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        slidesPerView: 4,
-        spaceBetween: 15,
-        autoHeight: true,
-        direction: 'horizontal',
-        loop: true,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                width: 240,
-                centeredSlides: true,
-                centeredSlidesBounds: true,
-                slidesPerView: 1,
-            },
-            // when window width is >= 480px
-            480: {
-            slidesPerView: 2,
-            spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-            slidesPerView: 4,
-            spaceBetween: 20
-            }
-        },
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-    </script>
 
 </body>
 </html>

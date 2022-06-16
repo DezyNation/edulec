@@ -7,7 +7,7 @@
     <title>Edulec</title>
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/subscription.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -65,7 +65,7 @@
         <div class="mobile-menu">
             <a href="affiliateform.html" class="mobile-menu--item">Affiliate Area</a>
             <a href="job.html" class="mobile-menu--item">Get a Job</a>
-            <a href="subscription.html" class="mobile-menu--item">Corporate Subscription</a>
+            <a href="#" class="mobile-menu--item">Corporate Subscription</a>
         </div>
 
         <div class="mobile-menu">
@@ -174,7 +174,7 @@
             <div class="nav-right--left">
                 <a href="affiliateform.html">Affiliate Area</a>
                 <a href="job.html" class="nav-get-job">Get a Job</a>
-                <a href="subscription.html">Corporate Subscription</a>
+                <a href="#">Corporate Subscription</a>
             </div>
             <div class="nav-right--right">
                 <a href="register.html" class="register"><p>REGISTER</p></a>
@@ -185,69 +185,51 @@
 </header>
 
 <section>
-    <div id="wrapper" class="courseinfo-section vertical-wrapper">
+    <div id="wrapper" class="vertical-wrapper">
+        <h1 class="section-heading title-small text-center">Got some doubts?<br>Don't worry. &nbsp; We're here!</h1>
+        <br>
+        <p class="section-subtitle text-center">Simply select your topic and subscription package to get your doubts answered</p>
 
-        <div class="flex horizontal-wrapper">
-            <div class="flex vertical-wrapper align-start large">
-                <div class="course-info-wrapper">
-                    <h1 class="course-title">Microsoft Excel Advanced</h1>
-                    <p>Taught by Khushbu Mali</p>
-                    <br><br>
-                    <h3>Things you will learn in this course:</h3>
-                    <div class="course-keypoint-row">
-                        <p class="keypoint-no">1</p>
-                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-keypoint-row">
-                        <p class="keypoint-no">2</p>
-                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-keypoint-row">
-                        <p class="keypoint-no">3</p>
-                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-keypoint-row">
-                        <p class="keypoint-no">4</p>
-                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-keypoint-row">
-                        <p class="keypoint-no">5</p>
-                        <p class="keypoint">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class="course-info-wrapper">
-                    <h1 class="course-title">More Info</h1>
-                    <br><br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo alias perferendis minima officia nisi vero molestias harum consequatur perspiciatis vitae enim vel atque quod nostrum, repudiandae debitis quos earum explicabo, suscipit ipsa numquam? Molestiae, illo?</p>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo alias perferendis minima officia nisi vero molestias harum consequatur perspiciatis vitae enim vel atque quod nostrum, repudiandae debitis quos earum explicabo, suscipit ipsa numquam? Molestiae, illo?</p>
-                </div>
+        <div class="courses-wrapper">
+
+            <div class="subscription-card" onclick="openPackages()">
+                <img src="./img/python.png" alt="Python" class="subscription-card-img">
+                <h2 class="subscription-card-title">Python Programming Advanced</h2>
             </div>
-            <div class="flex vertical-wrapper align-start small">
-                <iframe src="https://www.youtube.com/embed/DduGnrec8Is" title="YouTube video player" class="course-intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="course-benefits-card">
-                    <h4>Benefits of this course</h4>
-                    <div class="course-benefit-row">
-                        <p class="benefit-no">1</p>
-                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-benefit-row">
-                        <p class="benefit-no">2</p>
-                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="course-benefit-row">
-                        <p class="benefit-no">3</p>
-                        <p class="benefit">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <a href="#" class="syllabus-btn">Download Syllabus</a>
-                </div>
-            </div>
+
         </div>
-
     </div>
 </section>
 
-<a href="#" class="buy-course"><i class="bi bi-cart-check-fill"></i></a>
+<section id="subscription-package-section">
+    <div class="subscriptions-container">
+        <h3>Choose your subscription plan</h3>
+        <br>
+        <div class="subscriptions-wrapper-row">
+            <div class="subscription-package">
+                <h1 class="subscription-package-title">Monthly</h1>
+                <p class="subscription-package-info">Ask 5 questions from our experts anytime within 1 month of your purchase.</p>
+                <p class="subscription-package-info">Price: &nbsp; <strong>₹499</strong></p>
+                <a href="#" class="subscription-package-btn">Add to cart</a>
+            </div>
+            <div class="subscription-package">
+                <h1 class="subscription-package-title">Quarterly</h1>
+                <p class="subscription-package-info">Ask 25 questions from our experts anytime within 3 months of your purchase.</p>
+                <p class="subscription-package-info">Price: &nbsp; <strong>₹1499</strong></p>
+                <a href="#" class="subscription-package-btn">Add to cart</a>
+            </div>
+            <div class="subscription-package">
+                <h1 class="subscription-package-title">Annualy</h1>
+                <p class="subscription-package-info">Ask 100 questions from our experts anytime within 1 year of your purchase.</p>
+                <p class="subscription-package-info">Price: &nbsp; <strong>₹6999</strong></p>
+                <a href="#" class="subscription-package-btn">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <i class="close-btn bi bi-x-circle" onclick="closePackages()"></i>
+</section>
+
 
     <!-- Footer starts here -->
     <footer>
@@ -301,6 +283,7 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/subscription.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 .affiliate-form-wrapper{
     position: relative;
     padding: 2rem;
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 100%;
     height: auto;
     display: flex;
@@ -12,7 +12,7 @@
 .job-wrapper{
     position: relative;
     padding: 2rem;
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 100%;
     height: auto;
     display: flex;
