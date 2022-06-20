@@ -1,13 +1,16 @@
-/* body{
-    background: url('../img/shapesbg.svg') center/cover no-repeat;
-    background-attachment: fixed;
-} */
+
+:root{
+    --colorone: #0b1628;
+    --colortwo: #224C82;
+    --colorthree: #F14A16;
+    --colorfour: #FC9918;
+}
 
 .hero{
     position: relative;
     width: 100%;
     height: 120vh;
-    background: url('../img/heropath.svg');
+    background: url('../img/heropath.svg') top / cover no-repeat;
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 65% 90%, 0% 80%); */
     overflow: hidden;
 }
@@ -84,7 +87,7 @@
 
 .people-img{
     position: relative;
-    width: 100%;
+    width: 350px;
     height: auto;
 }
 
@@ -130,134 +133,222 @@
 }
 
 
-.learning-family{
-    padding: 0 3rem;
-    height: auto;
+
+
+.courses-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem auto;
 }
-.equal-div{
-    width: 50%;
+.course-card-container{
+    position: relative;
+    margin: 0 1rem;
+    width: 220px;
+    height: 290px;
+    background: #FFF;
+    border-radius: 24px;
+    transition: all .3s ease;
+}
+.course-card--top-border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 50%;
+    background: linear-gradient(200deg, rgb(100, 100, 255), rgba(255, 255, 255, 0.5));
+    border-radius: 24px 24px 0 0;
+    transform: translate(-2px, -2px);
+}
+.course-card--bottom-border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 50%;
+    background: linear-gradient(-160deg, rgb(100, 100, 255), rgba(255, 255, 255, 0.5));
+    border-radius: 0 0 24px 24px;
+    transform: translate(2px, 2px);
+}
+.course-card{
+    position: relative;
+    width: 220px;
+    height: inherit;
+    padding: 2px;
+    background: #FFF;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    z-index: 5;
 }
-.learning-family .equal-div h1{
-    align-self: flex-start;
-}
-.index-animation{
-    align-self: flex-end;
-}
-.index-explore-btn{
+.course-card-thumbnail{
     position: relative;
-    width: auto;
-    margin-top: 2rem;
-    padding: .75rem 1rem;
-    border: 2px solid var(--colorone);
-    color: var(--colorone);
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    align-self: flex-start;
-    border-radius: 28px;
+    width: 100%;
+    height: 170px;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center;
     transition: all .3s ease;
 }
-.index-explore-btn:hover{
-    background: var(--colorone);
-    color: #FFF;
-}
-
-
-
-.benefit-teacher{
-    padding: 0 2rem;
-    background: azure url('../img/benefit-teacher.svg') center/cover no-repeat;
-}
-.benefit-teacher .small{
-    display: flex;
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-}
-.benefit-teacher .large{
-    height: 100vh;
+.course-card-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
-.khushbu-img{
-    align-self: flex-start;
-    width: 30vw;
-    height: auto;
-}
-
-.benefit-teacher .equal-div{
-    height: 100vh;
+.course-card-content--row{
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
-.benefit-teacher .equal-div h1{
-    font-size: 3rem;
-    color: var(--colorthree);
-    text-align: left;
-    text-shadow: 12px 12px 24px var(--colorthree);
+.course-card-flag{
+    position: relative;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: .6rem;
+    font-weight: 500;
+    background: aqua;
+    color: var(--colortwo);
 }
-.benefit-teacher .equal-div p{
-    color: darkslategray;
-    text-align: left;
+.rating-flag{
+    border-radius: 16px;
+    background: var(--colortwo);
 }
 
-.khushbu-link{
-    color: var(--colorthree);
+.course-card-numrating{
+    color: #FFF;
+}
+.course-card-starrating{
+    margin-right: 5px;
+    color: yellow;
+}
+
+.course-card-title{
+    position: relative;
+    margin: .75rem 0;
+    font-size: .7rem;
+    text-transform: capitalize;
+    color: var(--colorone);
+}
+.course-card .align-bottom{
+    position: absolute;
+    width: 180px;
+    bottom: .5rem;
+}
+.course-card-feature{
+    position: relative;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1.12rem;
     font-weight: 600;
+    font-size: .6rem;
+    color: var(--colortwo);
 }
-.khushbu-link--linkedin{
-    width: 24px;
-    height: 24px;
-    fill: var(--colortwo);
+.course-card-feature i{
+    position: relative;
+    margin-right: 5px;
+}
+.course-card-container:hover .course-card-thumbnail{
+    transform: scale(1.05);
+}
+
+.index-explore-btn{
+    position: relative;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    background: var(--colortwo);
+    color: #FFF;
+    font-size: .75rem;
+    text-transform: capitalize;
     transition: all .3s ease;
 }
-.khushbu-link:hover .khushbu-link--linkedin{
-    transform: translateX(8px);
-    fill: var(--colorthree);
+.index-explore-btn:hover{
+    filter: hue-rotate(125deg);
 }
 
 
-.benefit-student{
-    background: #FFF;
-}
-
-.benefit{
+.benefits{
     position: relative;
-    width: auto;
+    width: 100%;
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.benefits .horizontal-wrapper{
+    position: relative;
+    width: 100%;
+}
+.flex-start{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.benefits-container-title{
+    position: relative;
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: left;
+    color: var(--colorone);
+}
+.benefits-row{
+    position: relative;
+    margin-bottom: 1.25rem;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.benefit-point{
+
+.benefits-icon{
     position: relative;
-    top: -.28rem;
-    margin-left: 1rem;
-    font-size: 1.175rem;
-    transition: all .3s ease;
+    width: 4rem;
+    height: 3.15rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 1.25rem;
 }
-.benefit:hover .benefit-point{
-    transform: translateX(5px);
+.gd-green{
+    background: linear-gradient(120deg, rgb(0, 135, 80), rgb(0,125,80));
+}
+.rd-green{
+    background: linear-gradient(120deg, rgb(215, 45, 5), rgb(200, 0, 0));
+}
+.benefits-content{
+    position: relative;
+    width: auto;
+    margin-left: 1rem;
+}
+.benefits-title{
+    position: relative;
+    color: var(--colorone);
+}
+.benefits-desc{
+    font-size: .75rem;
+    color: var(--colortwo);
+    font-weight: 500;
 }
 
-.index-animation{
-    width: 500px;
-    height: 500px;
-}
+
+
 
 
 @media (max-width: 768px) {
@@ -287,49 +378,5 @@
     .hero-left h1{
         font-size: 2.125rem;
     }
-
-    .learning-family{
-        padding: 1rem;
-        height: 40vh !important;
-        flex-direction: row;
-    }
-    .learning-family .index-animation{
-        width: 160px;
-    }
-    .container-heading{
-        font-size: 1.25rem;
-        align-items: unset;
-    }
-    .index-explore-btn{
-        position: relative;
-        bottom: 1rem;
-        width: 100% !important;
-        padding: .5rem 1.5rem;
-        font-size: 1rem;
-    }
-
-    .benefit-teacher{
-        padding: 1rem;
-    }
-    .khushbu-img{
-        width: 80vw;
-        height: auto;
-        margin-bottom: 2rem;
-    }
-    .benefit-teacher .equal-div{
-        height: auto;
-    }
-    .benefit-teacher .equal-div h1{
-        font-size: 2.2rem;
-    }
-    .khushbu-link{
-        text-align: center;
-        align-self: center;
-    }
-
-
-    .index-animation{
-        width: 320px;
-        height: 320px;
-    }
+    
 }
