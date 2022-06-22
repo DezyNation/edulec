@@ -185,7 +185,7 @@
                     <a class="nav-link" href="affiliateform.html">Affiliate</a>
                     <a class="nav-link" href="job.html">Get a Job</a>
                     <a class="nav-link" href="subscription.html">Corporate Subscription</a>
-                    <a href="login.html" class="login"><h3>log in | sign up</h3></a>
+                    <div class="login" onclick="openAuth()"><h3>log in | sign up</h3></div>
             </div>
         </nav>
     </header>
@@ -405,6 +405,44 @@
         </div>
     </section>
 
+
+    <section id="auth-section">
+        <div id="auth-wrapper" class="horizontal-wrapper">
+            <div class="left">
+
+            </div>
+            <div class="right vertical-wrapper flex-start">
+                <h1 class="form-title">Sign In</h1>
+                <form action="">
+                    <div class="form-input-row">
+                        <i class="bi bi-person-fill"></i>
+                        <input type="text" name="email" id="email" placeholder="Your Email ID">
+                    </div>
+                    <div class="form-input-row">
+                        <i class="bi bi-key-fill"></i>
+                        <input type="password" name="password" id="password" placeholder="Your Password">
+                    </div>
+                    <div class="horizontal-wrapper">
+                        <div class="remember-row">
+                            <input type="checkbox" name="remember" id="remember">
+                            <p>Remember me</p>
+                        </div>
+                        <button type="submit" class="auth-submit-btn">Sign In</button>
+                    </div>
+                </form>
+                <br>
+                <div class="social-wrapper vertical-wrapper">
+                    <a href="#">Create your account</a>
+                    <p style="color: darkslategray;">or</p>
+                    <br>
+                    <a href="#" class="social-login-btn red-grad"><i class="bi bi-google"></i><h3>Login with Google</h3></a>
+                </div>
+            </div>
+        </div>
+        <i class="bi bi-x-circle-fill close-wrapper" onclick="closeAuth()"></i>
+    </section>
+
+
     
     <!-- Footer starts here -->
     <footer>
@@ -458,9 +496,6 @@
     </footer>
 
     <script src="js/navbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        new Glide('.glide').mount()
-    </script>
+    <script src="js/auth.js"></script>
 </body>
 </html>

@@ -1,11 +1,9 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+const authWrapper = document.getElementById("auth-section");
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+function openAuth(){
+	authWrapper.style.display = "grid";
+}
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+function closeAuth(){
+	authWrapper.style.display = "none";
+}
