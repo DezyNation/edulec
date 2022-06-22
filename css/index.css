@@ -348,6 +348,64 @@
 }
 
 
+.linkedin-btn{
+    position: relative;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--colortwo);
+    border-radius: 8px;
+    background: #FFF;
+    color: var(--colorone);
+    font-weight: 700;
+    font-size: .75rem;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+.khushbumali{
+    position: relative;
+    width: 360px;
+    height: auto;
+}
+
+.softwares-container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 24px;
+    background-color: rgb(200, 255, 255);
+}
+.software-card{
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    width: 260px;
+    background: #FFF;
+    border-radius: 24px;
+}
+.software-card-img{
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.software-card-title{
+    position: relative;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--colorone);
+}
+.software-card-btn{
+    position: relative;
+    margin-bottom: 1rem;
+    padding: .75rem 1.25rem;
+    background: linear-gradient(120deg, rgb(120, 120, 255), rgb(100, 100, 255));
+    border-radius: 8px;
+    color: #FFF;
+    font-size: .9rem;
+}
+
+
 
 
 
