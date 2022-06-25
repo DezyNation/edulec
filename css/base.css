@@ -158,7 +158,7 @@ nav a{
 .nav-link{
     position: relative;
     margin: 0 1vw;
-    font-family: 'Gilroy-Regular';
+    font-family: 'Poppins', sans-serif;
     font-size: 1vw;
     font-weight: 400;
     cursor: pointer;
