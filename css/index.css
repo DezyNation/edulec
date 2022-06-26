@@ -383,6 +383,10 @@
     text-transform: capitalize;
     transition: all .3s ease;
 }
+.linkedin-btn:hover{
+    border-color: var(--colorfour);
+    color: var(--colorfour);
+}
 .khushbumali{
     position: relative;
     width: 30vw;
@@ -430,6 +434,10 @@
     color: #FFF;
     font-size: 1vw;
     font-family: 'Gilroy-Medium';
+    transition: all .3s ease;
+}
+.software-card-btn:hover{
+    color: var(--colorfour);
 }
 
 
@@ -488,13 +496,18 @@
     position: relative;
     width: 8vw;
     padding: 1rem;
-    font-family: 'Gilroy-Regular';
+    font-family: 'Gilroy-Medium';
     border: none;
     background: var(--colorthree);
     color: #FFF;
     font-size: 1.25vw;
     border-radius: 12px;
     align-self: flex-end;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.newsletter-form-submit:hover{
+    color: var(--colorfour);
 }
 
 
