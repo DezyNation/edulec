@@ -228,8 +228,8 @@
     border-radius: 4px;
     font-size: .6vw;
     font-family: 'Gilroy-Bold', sans-serif;
-    background: aqua;
-    color: var(--colortwo);
+    background: var(--bordercolor);
+    color: #FFF;
 }
 .rating-flag{
     border-radius: 16px;
