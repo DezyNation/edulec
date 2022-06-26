@@ -523,7 +523,11 @@ footer{
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: azure;
+    color: var(--light);
+    transition: all .3s ease;
+}
+.footer-link:hover{
+    color: var(--colorfour);
 }
 
 .footer-branding{
