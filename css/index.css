@@ -2,6 +2,7 @@
     --colorone: #0C043E;
     --colortwo: #6E7197;
     --colorthree: #1A4071;
+    --colorfour: #EEAB10;
     --light: #E7EDFA;
     --bordercolor: #3A77C4;
 }
@@ -197,7 +198,7 @@
 .course-card-thumbnail{
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 22vh;
     border-radius: inherit;
     object-fit: cover;
     object-position: center;
@@ -286,7 +287,7 @@
     transition: all .3s ease;
 }
 .index-explore-btn:hover{
-    filter: hue-rotate(125deg);
+    color: var(--colorfour);
 }
 
 
@@ -298,6 +299,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.benefits-img{
+    position: relative;
+    left: -5vw;
 }
 .benefits .horizontal-wrapper{
     position: relative;
@@ -320,7 +325,7 @@
 }
 .benefits-row{
     position: relative;
-    margin-bottom: 3.5vh;
+    margin-bottom: 2.5vh;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -356,6 +361,8 @@
     color: var(--colorone);
 }
 .benefits-desc{
+    position: relative;
+    margin: 1.5vh 0;
     font-size: 1vw;
     color: var(--colortwo);
     font-family: 'Gilroy-Medium';
@@ -364,6 +371,7 @@
 
 .linkedin-btn{
     position: relative;
+    margin-top: 2vh;
     padding: 1rem 1.25rem;
     border: 2px solid var(--colortwo);
     border-radius: 8px;
@@ -431,7 +439,7 @@
     position: relative;
     width: 50vw;
     height: 34vh;
-    margin: 10vh auto;
+    margin: 5vh auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -447,9 +455,15 @@
     border-radius: inherit;
     background-color: #FFF;
 }
+.newsletter-wrapper .section-title{
+    margin: .25vh auto;
+}
+.newsletter-wrapper .section-subtitle{
+    margin-top: 0;
+}
 .newsletter-form{
     position: relative;
-    margin: 2vh auto 0;
+    margin: 1vh auto 0;
     padding: .5vh .25vw;
     width: 80%;
     border-radius: 12px;
