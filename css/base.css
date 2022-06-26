@@ -459,7 +459,7 @@ footer{
     width: 100%;
     height: auto;
     padding-bottom: 1rem;
-    padding-left: 15vw;
+    padding-left: 10vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -541,8 +541,13 @@ footer{
     text-transform: uppercase;
     font-family: 'Poppins';
 }
+.footer-branding .brand-img{
+    position: relative;
+    width: 12vw;
+}
 .footer-desc{
-    color: azure;
+    margin-top: 2vh;
+    color: var(--light);
     font-size: .8vw;
     font-family: 'Poppins', sans-serif;
     max-width: 55%;
