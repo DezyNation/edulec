@@ -552,6 +552,7 @@ footer{
     width: 12vw;
 }
 .footer-desc{
+    margin-left: 2vw;
     margin-top: 2vh;
     color: var(--light);
     font-size: .8vw;
