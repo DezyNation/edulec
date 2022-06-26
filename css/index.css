@@ -1,4 +1,3 @@
-
 :root{
     --colorone: #0C043E;
     --colortwo: #6E7197;
@@ -7,10 +6,12 @@
     --bordercolor: #3A77C4;
 }
 
+
+
 .hero{
     position: relative;
     width: 100%;
-    height: 145vh;
+    height: 140vh;
     background: url('../img/heropath.svg') 0% 0% / cover no-repeat;
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 65% 90%, 0% 80%); */
     overflow: hidden;
@@ -18,7 +19,7 @@
 
 .hero-container{
     position: relative;
-    top: 15vh;
+    top: 5vh;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -43,7 +44,7 @@
 .hero-left h1{
     margin-bottom: 2vh;
     font-size: 3.5vw;
-    font-weight: 700;
+    font-family: 'Gilroy-Bold';
     letter-spacing: -.01rem;
 }
 .hero-left p{
@@ -98,6 +99,7 @@
 
 .hero-cards-row{
     position: relative;
+    margin-top: -5vh;
     width: 48vw;
     height: auto;
     display: flex;
@@ -107,7 +109,7 @@
 }
 .hero-card{
     position: relative;
-    padding: .5vw;
+    padding: 1vh .5vw;
     margin: 0 1vw;
     width: 8vw;
     height: 20vh;
@@ -117,7 +119,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .hero-card-icon{
     position: relative;
@@ -140,7 +142,10 @@
 
 
 
-
+.courses-section{
+    position: relative;
+    margin: -10vh auto 2rem;
+}
 .courses-wrapper{
     position: relative;
     width: 100%;
@@ -151,7 +156,7 @@
     position: relative;
     margin: 0 1rem;
     width: 16vw;
-    height: 45vh;
+    height: 42.5vh;
     background: #FFF;
     border-radius: 24px;
     transition: all .3s ease;
@@ -221,13 +226,13 @@
     padding: 4px 8px;
     border-radius: 4px;
     font-size: .6vw;
-    font-weight: 500;
+    font-family: 'Gilroy-Bold', sans-serif;
     background: aqua;
     color: var(--colortwo);
 }
 .rating-flag{
     border-radius: 16px;
-    background: var(--colorthree);
+    background: var(--bordercolor);
 }
 
 .course-card-numrating{
@@ -247,7 +252,7 @@
 }
 .course-card .align-bottom{
     position: absolute;
-    width: 13vw;
+    width: 14vw;
     bottom: .5rem;
 }
 .course-card-feature{
@@ -259,7 +264,7 @@
     justify-content: center;
     font-weight: 600;
     font-size: .8vw;
-    color: var(--colortwo);
+    color: var(--bordercolor);
 }
 .course-card-feature i{
     position: relative;
@@ -307,9 +312,9 @@
 }
 .benefits-container-title{
     position: relative;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
     font-size: 3vw;
-    font-weight: 800;
+    font-family: 'Gilroy-Bold';
     text-align: left;
     color: var(--colorone);
 }
@@ -325,8 +330,8 @@
 
 .benefits-icon{
     position: relative;
-    width: 4rem;
-    height: 3.15rem;
+    width: 4vw;
+    height: auto;
     display: grid;
     place-content: center;
     border-radius: 50%;
@@ -346,6 +351,7 @@
 }
 .benefits-title{
     position: relative;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-size: 1.5vw;
     color: var(--colorone);
 }
@@ -383,7 +389,7 @@
     width: 80%;
     height: auto;
     padding: 10vh 10vw;
-    border-radius: 64px;
+    border-radius: 72px;
     background-color: var(--light);
 }
 .software-card{
@@ -411,7 +417,7 @@
     position: relative;
     margin-bottom: 4vh;
     padding: .75rem 1.25rem;
-    background: linear-gradient(120deg, rgb(120, 120, 255), rgb(100, 100, 255));
+    background: var(--colorthree);
     border-radius: 8px;
     color: #FFF;
     font-size: 1vw;
@@ -424,27 +430,27 @@
 .newsletter-container{
     position: relative;
     width: 50vw;
-    height: 36vh;
+    height: 34vh;
     margin: 10vh auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #3A77C4, rgb(170, 221, 255));
-    border-radius: 32px;
+    border-radius: 48px;
 }
 .newsletter-wrapper{
     position: relative;
-    width: 49.5vw;
-    height: 35.5vh;
-    padding: 2vh 4vw;
+    width: 49.25vw;
+    height: 32.5vh;
+    padding: 1vh 2vw;
     border-radius: inherit;
     background-color: #FFF;
 }
 .newsletter-form{
     position: relative;
-    margin: 3vh auto 0;
-    padding: 5px;
+    margin: 2vh auto 0;
+    padding: .5vh .25vw;
     width: 80%;
     border-radius: 12px;
     border: 1px solid var(--bordercolor);
@@ -472,6 +478,7 @@
     border: none;
     background: var(--colorthree);
     color: #FFF;
+    font-size: 1.25vw;
     border-radius: 12px;
     align-self: flex-end;
 }
