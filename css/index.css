@@ -363,7 +363,7 @@
 }
 .benefits-desc{
     position: relative;
-    margin: 1vh 0;
+    margin: .5vh 0 1vh;
     font-size: 1vw;
     color: var(--colortwo);
     font-family: 'Gilroy-Medium';
