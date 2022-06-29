@@ -392,10 +392,10 @@
     <section id="auth-section">
         <div id="auth-wrapper" class="horizontal-wrapper">
             <div class="left">
-
+                <img src="./img/loginimg.png" id="auth-left-img">
             </div>
             <div class="right vertical-wrapper flex-start">
-                <h1 class="form-title">Sign In</h1>
+                <h1 class="form-title" id="form-title">Sign In</h1>
                 <form action="">
                     <div class="form-input-row">
                         <i class="bi bi-person-fill"></i>
@@ -405,7 +405,14 @@
                         <i class="bi bi-key-fill"></i>
                         <input type="password" name="password" id="password" placeholder="Your Password">
                     </div>
-                    <div class="horizontal-wrapper">
+                    <div class="horizontal-wrapper" id="signup-wrapper">
+                        <button type="submit" class="auth-submit-btn">Sign Up</button>
+                        <a href="#" class="auth-videolink-div">
+                            <img src="./img/play-btn.png">
+                            <p>Know More</p>
+                        </a>
+                    </div>
+                    <div class="horizontal-wrapper" id="signin-wrapper">
                         <div class="remember-row">
                             <input type="checkbox" name="remember" id="remember">
                             <p>Remember me</p>
@@ -415,14 +422,19 @@
                 </form>
                 <br>
                 <div class="social-wrapper vertical-wrapper">
-                    <a href="#"><strong>Create your account</strong></a>
-                    <p style="color: darkslategray;">or</p>
+                    <a href="#" id="signup-txt" onclick="prepareSignup()"><strong>Create your account</strong></a>
+                    <a href="#" id="signin-txt" onclick="prepareSignin()"><strong>Already have account? Login here</strong></a>
                     <br>
-                    <a href="#" class="social-login-btn"><i class="bi bi-google"></i><h3>Login with Google</h3></a>
+                    <div class="form-row">
+                        <p>Or login with:</p>
+                        <a href="#" class="social-login-btn"><i class="bi bi-google"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <i class="bi bi-x-circle-fill close-wrapper" onclick="closeAuth()"></i>
+        <div class="close-auth-wrapper" onclick="closeAuth()">
+            <i class="bi bi-x-circle-fill close-wrapper" onclick="closeAuth()"></i>
+        </div>
     </section>
 
 
