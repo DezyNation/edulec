@@ -1,7 +1,7 @@
 :root{
     --colorone: #0C043E;
     --colortwo: #6E7197;
-    --colorthree: #1A4071;
+    --colorthree: #224C82;
     --colorfour: #EEAB10;
     --light: #E7EDFA;
     --bordercolor: #3A77C4;
@@ -116,7 +116,7 @@
     height: 20vh;
     background: #FFF;
     border: 1.5px solid var(--bordercolor);
-    border-radius: 20px;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,6 @@
     height: auto;
     display: grid;
     place-content: center;
-    background: aquamarine;
     border-radius: 50%;
     color: darkslategray;
     font-size: 1.5rem;
@@ -155,7 +154,7 @@
 }
 .course-card-container{
     position: relative;
-    margin: 0 1rem;
+    margin: 0 2.5vh;
     width: 16vw;
     height: 42.5vh;
     background: #FFF;
@@ -186,7 +185,7 @@
     position: relative;
     width: inherit;
     height: inherit;
-    padding: 2px;
+    padding: .25vh .125vw;
     background: #FFF;
     border-radius: 24px;
     display: flex;
@@ -199,6 +198,7 @@
     position: relative;
     width: 100%;
     height: 22vh;
+    margin-bottom: .5vw;
     border-radius: inherit;
     object-fit: cover;
     object-position: center;
@@ -208,7 +208,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding: .5rem 1rem;
+    padding: .5vh .25vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -246,7 +246,8 @@
 
 .course-card-title{
     position: relative;
-    margin: .75rem 0;
+    margin: .75vh 0;
+    max-width: 100%;
     font-size: 1vw;
     text-transform: capitalize;
     color: var(--colorone);
@@ -277,8 +278,8 @@
 
 .index-explore-btn{
     position: relative;
-    padding: 1rem 1.25rem;
-    border-radius: 8px;
+    padding: 3vh 1.75vw;
+    border-radius: 16px;
     background: var(--colorthree);
     color: #FFF;
     font-family: 'Gilroy-Regular';
@@ -287,7 +288,7 @@
     transition: all .3s ease;
 }
 .index-explore-btn:hover{
-    color: var(--colorfour);
+    background: #b3bccf;
 }
 
 
@@ -318,8 +319,8 @@
 .benefits-container-title{
     position: relative;
     margin-bottom: 4vh;
-    font-size: 3vw;
-    font-family: 'Gilroy-Bold';
+    font-size: 2.6vw;
+    font-family: 'Gilroy-Heavy';
     text-align: left;
     color: var(--colorone);
 }
@@ -335,7 +336,7 @@
 
 .benefits-icon{
     position: relative;
-    width: 4vw;
+    width: 2.75vw;
     height: auto;
     display: grid;
     place-content: center;
@@ -362,7 +363,7 @@
 }
 .benefits-desc{
     position: relative;
-    margin: 1.5vh 0;
+    margin: 1vh 0;
     font-size: 1vw;
     color: var(--colortwo);
     font-family: 'Gilroy-Medium';
@@ -437,14 +438,14 @@
     transition: all .3s ease;
 }
 .software-card-btn:hover{
-    color: var(--colorfour);
+    background: #b3bccf;
 }
 
 
 
 
 .newsletter-container{
-    position: relative;
+    position: absolute;
     width: 50vw;
     height: 34vh;
     margin: 5vh auto;
@@ -453,12 +454,12 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #3A77C4, rgb(170, 221, 255));
-    border-radius: 48px;
+    border-radius: 64px;
 }
 .newsletter-wrapper{
     position: relative;
-    width: 49.25vw;
-    height: 32.5vh;
+    width: 49.45vw;
+    height: 32.75vh;
     padding: 1vh 2vw;
     border-radius: inherit;
     background-color: #FFF;
@@ -507,7 +508,7 @@
     transition: all .3s ease;
 }
 .newsletter-form-submit:hover{
-    color: var(--colorfour);
+    background: #b3bccf;
 }
 
 
