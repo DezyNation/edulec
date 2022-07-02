@@ -14,7 +14,6 @@
     width: 100%;
     height: 140vh;
     background: url('../img/heropath.svg') 0% 0% / cover no-repeat;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 65% 90%, 0% 80%); */
     overflow: hidden;
 }
 
@@ -154,7 +153,7 @@
 }
 .course-card-container{
     position: relative;
-    margin: 0 2.5vh;
+    margin: 0 2.5vw;
     width: 16vw;
     height: 42.5vh;
     background: #FFF;
@@ -344,12 +343,6 @@
     color: #FFF;
     font-size: 1.25rem;
 }
-.gd-green{
-    background: linear-gradient(120deg, rgb(0, 135, 80), rgb(0,125,80));
-}
-.rd-green{
-    background: linear-gradient(120deg, rgb(215, 45, 5), rgb(200, 0, 0));
-}
 .benefits-content{
     position: relative;
     width: auto;
@@ -517,30 +510,163 @@
 
 @media (max-width: 768px) {
 
+
     .hero{
-        height: 80vh;
-        clip-path: unset;
+        height: 94vh;
+        background-position: center;
     }
-    .hero .container{
-        height: 80vh !important;
+    .hero-container{
+        top: 14vh;
+        height: inherit;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
     .hero-left, .hero-right{
         width: 100%;
         height: auto;
         padding: 1rem;
     }
-    .hero-left{
-        padding-top: 7rem;
-        height: 70vh !important;
-    }
-    .people-img{
-        transform: translateY(3rem);
-    }
-    .hero-left h3{
-        font-size: 1rem;
-    }
+
+
     .hero-left h1{
-        font-size: 2.125rem;
+        font-size: 10vw;
+        font-family: 'Gilroy-Medium', sans-serif;
     }
+    .hero-left p{
+        font-size: 4vw;
+    }
+    .play{
+        margin-top: 5vh;
+    }
+    .play-btn{
+        width: 12vw;
+    }
+    .play p{
+        font-size: 4vw;
+    }
+    
+    .people-img{
+        margin-top: -15vh;
+        margin-right: -38vw;
+        width: 90vw;
+    }
+
+    .hero-cards-row{
+        margin-top: -22vh;
+        width: 100%;
+        justify-content: center;
+    }
+    .hero-card{
+        padding: 2vh 1vw;
+        margin: 0 4vw;
+        width: 22vw;
+        height: 15vh;
+        border: .5px solid var(--bordercolor);
+    }
+    .hero-card-icon{
+        width: 8vw;
+    }
+    .hero-card-title{
+        font-size: 3.2vw;
+    }
+
+    .courses-section{
+        margin: unset;
+    }
+    .courses-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    .courses-wrapper::-webkit-scrollbar{
+        display: none;
+    }
+
+    .course-card-container{
+        width: 65vw;
+        height: 45vh;
+    }
+    .course-card-content{
+        padding: 1vh 2vw;
+    }
+    .course-card-flag{
+        font-size: 2vw;
+    }
+    .course-card-title{
+        margin: 2vh 0 1vh;
+        font-size: 4vw;
+    }
+    .course-card .align-bottom{
+        margin-left: 1vw;
+        width: 58vw;
+    }
+    .course-card-feature{
+        font-size: 2.4vw;
+    }
+
+
+
+    .index-explore-btn{
+        padding: 1.5vh 4vw;
+        font-size: 3vw;
+        border-radius: 8px;
+    }
+
+    .benefits{
+        padding: 1rem;
+    }
+    .benefits-container-title{
+        font-family: 'Gilroy-Bold', sans-serif;
+    }
+    .benefits-img{
+        left: unset;
+        width: 50vw;
+        display: none;
+    }
+
+    .benefits-container-title{
+        font-size: 8vw;
+        font-family: 'Gilroy-Bold', sans-serif;
+        margin-bottom: 4vh;
+    }
+    .benefits-icon{
+        width: 8vw;
+    }
+    .benefits-title{
+        font-size: 5vw;
+        font-family: 'Gilroy-Medium', sans-serif;
+    }
+    .benefits-desc{
+        font-size: 3vw;
+    }
+
+    .experts-section{
+        padding: 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .khushbumali{
+        width: 65vw;
+    }
+    .experts-section .benefits-container-title{
+        text-align: center;
+    }
+    .equal{
+        width: 100%;
+    }
+    .experts-section .flex-start{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkedin-btn{
+        padding: 2vh 3vw;
+        font-size: 3vw;
+    }
+
     
 }
