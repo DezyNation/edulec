@@ -54,7 +54,7 @@ a{
 
 #wrapper{
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1vh;
     width: 100%;
     height: auto;
     display: flex;
@@ -117,7 +117,7 @@ a{
 }
 
 .sidepanel-branding{
-    margin-bottom: 2rem;
+    margin-bottom: 3vh;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -153,7 +153,7 @@ a{
 
 .sidepanel-profile{
     position: relative;
-    margin: 2vh auto;
+    margin: 2vh auto 3vh;
     width: 100%;
     height: auto;
     display: flex;
@@ -173,7 +173,7 @@ a{
     object-position: center;
 }
 .sidepanel-profile--name{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     text-align: center;
     font-weight: 600;
     color: #111;
@@ -193,7 +193,7 @@ a{
     position: relative;
     margin-bottom: 3vh;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2vw;
     color: rgb(100, 100, 255);
     display: flex;
     flex-direction: row;
@@ -252,7 +252,7 @@ a{
 
 .dashboard-title{
     position: relative;
-    margin-top: 1vh;
+    margin: 4vh 0 2vh;
     font-size: 2vw;
     font-weight: 600;
 }
@@ -274,7 +274,7 @@ a{
 
 .card{
     position: relative;
-    margin: 1vw 2vw;
+    margin: 0 2.75vw 0 0;
     width: auto;
     padding: 2vh 1.5vw;
     border-radius: 16px;
@@ -303,7 +303,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-sizing: 2px 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0.5px 0.5px 16px rgba(0,0,0,0.05), -0.5px -0.5px 16px rgba(0,0,0,0.05);
 }
 
 .dashboard-search-form input{
@@ -462,11 +462,10 @@ a{
 
 
 .swiper {
+    position: relative;
     margin: 0;
     width: 18vw;
-    height: auto;
-    border-radius: 16px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    height: 50vh !important;
 }
 
 .dashboard-swiper-wrapper{
@@ -491,6 +490,32 @@ a{
     margin-right: 4vw;
 }
 
+.swiper-pagination{
+    position: absolute;
+    bottom: 10vh !important;
+}
+
+.swiper-nav{
+    position: absolute;
+    margin-top: 8vh;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--colorone);
+    color: #FFF;
+    font-size: .8vw;
+    display: grid;
+    place-content: center;
+    z-index: 500;
+}
+.swiper-prev{
+    left: 6.75vw;
+}
+.swiper-next{
+    right: 6.75vw;
+}
+
+
 .course-card{
     position: relative;
     background: #FFF;
@@ -507,7 +532,7 @@ a{
 .course-card--content{
     position: relative;
     width: 100%;
-    padding: 1rem;
+    padding: 1vh 1vw;
 }
 .course-card--content-title{
     position: relative;
@@ -551,15 +576,15 @@ a{
     align-self: center;
 }
 .card-name{
-    margin-top: .25rem;
+    font-size: 1.25vw;
     font-weight: 600;
     color: darkslategray;
 }
 .card-data{
     position: relative;
-    margin-top: .25rem;
+    margin-top: .25vw;
     width: 100%;
-    font-size: .9rem;
+    font-size: .9vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -569,22 +594,22 @@ a{
     color: #000;
 }
 .card-data--colorone{
-    font-size: .9rem;
+    font-size: .9vw;
     font-weight: 600;
     color: var(--colorone);
 }
 .card-data--colortwo{
-    font-size: .9rem;
+    font-size: .9vw;
     font-weight: 600;
     color: var(--colortwo);
 }
 .card-data--colorthree{
-    font-size: .9rem;
+    font-size: .9vw;
     font-weight: 600;
     color: var(--colorthree);
 }
 .card-data--colorfour{
-    font-size: .9rem;
+    font-size: .9vw;
     font-weight: 600;
     color: var(--colorfour);
 }
@@ -598,17 +623,53 @@ a{
 
 .dashcourse-card{
     position: relative;
-    width: 300px;
+    width: 18vw;
+    margin: 0;
+    margin-right: 4vw;
+    padding: 0;
 }
 .dashcourse-card--video{
     position: relative;
     width: 100%;
     height: auto;
-    border-radius: inherit;
+    border-radius: 16px 16px 0 0;
 }
-.dashcourse-card--tutor{
+.card-content{
     position: relative;
-    font-size: .9rem;
+    width: 100%;
+    height: auto;
+    padding: 0 1vw 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.progress-track{
+    position: relative;
+    margin: .5vh auto 2vh;
+    width: 100%;
+    height: 1.5vh;
+    background: aquamarine;
+    border-radius: 16px;
+}
+.progress-track--inner{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--colortwo);
+}
+.progress-num{
+    position: absolute;
+    bottom: -2.25vh;
+    right: .5vw;
+    font-size: .7vw;
+    color: darkslategray;
+}
+.dashcourse-card--category{
+    position: relative;
+    font-size: .8vw;
+    color: darkslategray;
 }
 
 /* Courses Card Styling Ends */
@@ -783,8 +844,9 @@ footer{
         transition: all .3s ease;
     }
     .sidepanel-branding{
-        margin-bottom: 2rem;
+        margin-bottom: 2vh;
     }
+
 
     .open-sidepanel{
         display: grid;
