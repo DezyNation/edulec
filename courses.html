@@ -7,273 +7,247 @@
     <title>Edulec</title>
 
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/allcourses.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
 
-    <div class="mobile-nav-top">
-        <div class="open-mobile-nav" onclick="openNav()"><i class="bi bi-list"></i></div>
-        <a href="index.html" class="mobile-nav-branding">
-            <svg
-               width="24"
-               height="24"
-               viewBox="0 0 6.3499999 6.3500002"
-               version="1.1"
-               id="svg5"
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:svg="http://www.w3.org/2000/svg">
-              <defs
-                 id="defs2" />
-              <g
-                 id="layer1">
-                <ellipse
-                   style="fill:#1a1a1a;stroke:none;stroke-width:0.0819969;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   id="path846"
-                   cx="3.175"
-                   cy="3.1749942"
-                   rx="3.175"
-                   ry="3.1749942" />
-                <path
-                   id="rect986"
-                   style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   d="M 17.591797 1.3828125 L 5.609375 8.3007812 C 4.8631387 8.731621 4.6101759 9.679545 5.0410156 10.425781 C 5.4718553 11.172018 6.4178262 11.426933 7.1640625 10.996094 L 20.349609 3.3828125 A 12 11.999978 0 0 0 17.591797 1.3828125 z "
-                   transform="scale(0.26458333)" />
-                <rect
-                   style="fill:#ffffff;stroke:none;stroke-width:0.0694773;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   id="rect1086"
-                   width="3.3022401"
-                   height="0.82305419"
-                   x="-0.48898655"
-                   y="3.9255986"
-                   ry="0.4115271"
-                   transform="rotate(-30)" />
-                <path
-                   id="rect1088"
-                   style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   d="M 17.572266 12.794922 C 17.321652 12.801691 17.069136 12.869269 16.835938 13.003906 L 3.6542969 20.613281 A 12 11.999978 0 0 0 6.4140625 22.611328 L 18.390625 15.699219 C 19.136861 15.268379 19.389824 14.320455 18.958984 13.574219 C 18.662782 13.061181 18.123616 12.780029 17.572266 12.794922 z "
-                   transform="scale(0.26458333)" />
-              </g>
-            </svg>            
-            <h2>EDULEC</h2>
-        </a>
-    </div>
+<div class="mobile-nav-top">
+    <div class="open-mobile-nav" onclick="openNav()"><i class="bi bi-list"></i></div>
+    <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+</div>
 
-    <aside id="mobile-nav">
-        <div class="mobile-menu">
-            <a href="affiliateform.html" class="mobile-menu--item">Affiliate Area</a>
-            <a href="job.html" class="mobile-menu--item">Get a Job</a>
-            <a href="subscription.html" class="mobile-menu--item">Corporate Subscription</a>
-        </div>
+<aside id="mobile-nav">
+    <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+    <a href="#" class="mobile-menu--item mobile-nav-course">
+        Courses &nbsp;&nbsp; <i class="bi bi-chevron-down" style="position: relative; top: .25vh;"></i>
 
-        <div class="mobile-menu">
-            <a href="register.html" class="mobile-menu--item">Register</a>
-            <a href="login.html" class="mobile-menu--item login">Login</a>
+        <div class="mobile-dropdown mobile-course-category">
+            Language &nbsp;&nbsp; <i class="bi bi-chevron-down" style="position: relative; top: .25vh;"></i>
+
+            <div class="mobile-dropdown mobile-course-name-dropdown">
+                <a href="#" class="mobile-course-name">Course Name</a>
+                <a href="#" class="mobile-course-name">Course Name</a>
+                <a href="#" class="mobile-course-name">Course Name</a>
+            </div>
+
         </div>
-        <a href="index.html" class="mobile-nav-branding">
-            <svg
-               width="24"
-               height="24"
-               viewBox="0 0 6.3499999 6.3500002"
-               version="1.1"
-               id="svg5"
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:svg="http://www.w3.org/2000/svg">
-              <defs
-                 id="defs2" />
-              <g
-                 id="layer1">
-                <ellipse
-                   style="fill:#1a1a1a;stroke:none;stroke-width:0.0819969;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   id="path846"
-                   cx="3.175"
-                   cy="3.1749942"
-                   rx="3.175"
-                   ry="3.1749942" />
-                <path
-                   id="rect986"
-                   style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   d="M 17.591797 1.3828125 L 5.609375 8.3007812 C 4.8631387 8.731621 4.6101759 9.679545 5.0410156 10.425781 C 5.4718553 11.172018 6.4178262 11.426933 7.1640625 10.996094 L 20.349609 3.3828125 A 12 11.999978 0 0 0 17.591797 1.3828125 z "
-                   transform="scale(0.26458333)" />
-                <rect
-                   style="fill:#ffffff;stroke:none;stroke-width:0.0694773;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   id="rect1086"
-                   width="3.3022401"
-                   height="0.82305419"
-                   x="-0.48898655"
-                   y="3.9255986"
-                   ry="0.4115271"
-                   transform="rotate(-30)" />
-                <path
-                   id="rect1088"
-                   style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                   d="M 17.572266 12.794922 C 17.321652 12.801691 17.069136 12.869269 16.835938 13.003906 L 3.6542969 20.613281 A 12 11.999978 0 0 0 6.4140625 22.611328 L 18.390625 15.699219 C 19.136861 15.268379 19.389824 14.320455 18.958984 13.574219 C 18.662782 13.061181 18.123616 12.780029 17.572266 12.794922 z "
-                   transform="scale(0.26458333)" />
-              </g>
-            </svg>            
-            <h2>EDULEC</h2>
-        </a>
-        <div class="close-mobile-nav" onclick="closeNav()"><i class="bi bi-x-lg"></i></div>
-    </aside>
+    </a>
+    <a class="mobile-menu--item">Affiliate</a>
+    <a href="#" class="mobile-menu--item">Get a job</a>
+    <a href="#" class="mobile-menu--item ">Corporate Subscription</a>
+    
+    <div class="close-mobile-nav" onclick="closeNav()"><i class="bi bi-x-lg"></i></div>
+</aside>
 
 <header>
     <nav>
         <div class="nav-left">
-            <a href="index.html" class="nav-branding">
-                <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 6.3499999 6.3500002"
-                    version="1.1"
-                    id="svg5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:svg="http://www.w3.org/2000/svg">
-                    <defs
-                        id="defs2" />
-                    <g
-                        id="layer1">
-                    <ellipse
-                        style="fill:#1a1a1a;stroke:none;stroke-width:0.0819969;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                        id="path846"
-                        cx="3.175"
-                        cy="3.1749942"
-                        rx="3.175"
-                        ry="3.1749942" />
-                    <path
-                        id="rect986"
-                        style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                        d="M 17.591797 1.3828125 L 5.609375 8.3007812 C 4.8631387 8.731621 4.6101759 9.679545 5.0410156 10.425781 C 5.4718553 11.172018 6.4178262 11.426933 7.1640625 10.996094 L 20.349609 3.3828125 A 12 11.999978 0 0 0 17.591797 1.3828125 z "
-                        transform="scale(0.26458333)" />
-                    <rect
-                        style="fill:#ffffff;stroke:none;stroke-width:0.0694773;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                        id="rect1086"
-                        width="3.3022401"
-                        height="0.82305419"
-                        x="-0.48898655"
-                        y="3.9255986"
-                        ry="0.4115271"
-                        transform="rotate(-30)" />
-                    <path
-                        id="rect1088"
-                        style="fill:#ffffff;stroke:none;stroke-width:0.358767;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
-                        d="M 17.572266 12.794922 C 17.321652 12.801691 17.069136 12.869269 16.835938 13.003906 L 3.6542969 20.613281 A 12 11.999978 0 0 0 6.4140625 22.611328 L 18.390625 15.699219 C 19.136861 15.268379 19.389824 14.320455 18.958984 13.574219 C 18.662782 13.061181 18.123616 12.780029 17.572266 12.794922 z "
-                        transform="scale(0.26458333)" />
-                    </g>
-                </svg>
-                &nbsp;&nbsp;                    
-                <h2>EDULEC</h2>
-            </a>
+            <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
         </div>
         <div class="nav-right">
-            <div class="nav-right--left">
-                <a href="affiliateform.html">Affiliate Area</a>
-                <a href="job.html" class="nav-get-job">Get a Job</a>
-                <a href="subscription.html">Corporate Subscription</a>
-            </div>
-            <div class="nav-right--right">
-                <a href="register.html" class="register"><p>REGISTER</p></a>
-                <a href="login.html" class="login"><p>Log In</p></a>
-            </div>
+                <a href="#" class="nav-link nav-course">
+                    Courses
+                    
+
+                    <!-- Courses Category Dropdown Meny -->
+                    <div class="category-menu-wrapper">
+                        <div class="dropdown category-menu">
+                            
+                            <div class="dropdown-link">
+                                <p class="category-link dropdown-link--text">Language</p>
+                                <i class="bi bi-chevron-right"></i>
+
+                                <!-- Courses Sub Menu -->
+                                <div class="category-submenu-wrapper">
+                                    <div class="dropdown category-submenu">
+
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="dropdown-link">
+                                <p class="category-link dropdown-link--text">Language</p>
+                                <i class="bi bi-chevron-right"></i>
+
+                                <!-- Courses Sub Menu -->
+                                <div class="category-submenu-wrapper">
+                                    <div class="dropdown category-submenu">
+
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="dropdown-link">
+                                <p class="category-link dropdown-link--text">Language</p>
+                                <i class="bi bi-chevron-right"></i>
+
+                                <!-- Courses Sub Menu -->
+                                <div class="category-submenu-wrapper">
+                                    <div class="dropdown category-submenu">
+
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+                                        <div class="dropdown-link">
+                                            <h3 class="dropdown-link--text">Course Name</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+
+
+                </a>
+                <a class="nav-link" href="affiliateform.html">Affiliate</a>
+                <a class="nav-link" href="job.html">Get a job</a>
+                <a class="nav-link nav-corporate" href="subscription.html">Corporate Subscription</a>
+                <div class="login" onclick="openAuth()"><h3>log in | sign up</h3></div>
         </div>
     </nav>
 </header>
 
-<section>
-    <div id="wrapper" class="vertical-wrapper">
-        <h1 class="section-heading text-center">Your Learning Journey Starts Here!</h1>
-        <div class="courses-section-row">
-            <p>Choose your preferred languages: </p>
-            <div class="language-filter-wrapper">
-                <button class="language-filter">Hindi</button>
-                <button class="language-filter">English</button>
-                <button class="language-filter">Gujrati</button>
-                <button class="language-filter">Marathi</button>
-            </div>
-        </div>
+<!-- <div class="courses-section-row">
+    <p>Choose your preferred languages: </p>
+    <div class="language-filter-wrapper">
+        <button class="language-filter">Hindi</button>
+        <button class="language-filter">English</button>
+        <button class="language-filter">Gujrati</button>
+        <button class="language-filter">Marathi</button>
+    </div>
+</div> -->
 
-        <div class="courses-wrapper">
+
+
+<section id="wrapper" class="courses-section vertical-wrapper">
+    <h1 class="section-title">Microsoft Courses</h1>
+    <p class="section-subtitle">Course category description will appear here.</p>
+    <div class="courses-wrapper horizontal-wrapper">
+
+        <a href="coursedata.html" class="course-card-container">
+            <div class="course-card--top-border"></div>
+            <div class="course-card--bottom-border"></div>
             <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
+                <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                <div class="course-card-content">
+                    <div class="course-card-content--row">
+                        <p class="course-card-flag">Beginner</p>
+                        <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                    </div>
+                    <h3 class="course-card-title">
+                        master english: how to improve your english speaking
+                    </h3>
+                    <div class="course-card-content--row align-bottom">
+                        <!-- <p class="course-card-feature">
+                            <i class="bi bi-play-circle-fill"></i>
+                            10x Lessons
+                        </p>
+                        <p class="course-card-feature">
+                            <i class="bi bi-camera-video-fill"></i>
+                            Online
+                        </p> -->
+                        <h3 class="course-card-price">₹ 3499</h3>
+                    </div>
                 </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
             </div>
+        </a>
+
+        <a href="coursedata.html" class="course-card-container">
+            <div class="course-card--top-border"></div>
+            <div class="course-card--bottom-border"></div>
             <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
+                <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                <div class="course-card-content">
+                    <div class="course-card-content--row">
+                        <p class="course-card-flag">Medium</p>
+                        <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                    </div>
+                    <h3 class="course-card-title">
+                        master english: how to improve your english speaking
+                    </h3>
+                    <div class="course-card-content--row align-bottom">
+                        <!-- <p class="course-card-feature">
+                            <i class="bi bi-play-circle-fill"></i>
+                            10x Lessons
+                        </p>
+                        <p class="course-card-feature">
+                            <i class="bi bi-camera-video-fill"></i>
+                            Online
+                        </p> -->
+                        <h3 class="course-card-price">₹ 3499</h3>
+                    </div>
                 </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
             </div>
+        </a>
+
+        <a href="coursedata.html" class="course-card-container">
+            <div class="course-card--top-border"></div>
+            <div class="course-card--bottom-border"></div>
             <div class="course-card">
-                <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg" alt="Course Name" class="course-card--img">
-                <div class="course-card--content">
-                    <h1 class="course-card--content-title">Microsoft Excel</h1>
-                    <p class="course-card--content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi officiis id quae eveniet in?</p>
+                <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                <div class="course-card-content">
+                    <div class="course-card-content--row">
+                        <p class="course-card-flag">Expert</p>
+                        <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                    </div>
+                    <h3 class="course-card-title">
+                        master english: how to improve your english speaking
+                    </h3>
+                    <div class="course-card-content--row align-bottom">
+                        <!-- <p class="course-card-feature">
+                            <i class="bi bi-play-circle-fill"></i>
+                            10x Lessons
+                        </p>
+                        <p class="course-card-feature">
+                            <i class="bi bi-camera-video-fill"></i>
+                            Online
+                        </p> -->
+                        <h3 class="course-card-price">₹ 3499</h3>
+                    </div>
                 </div>
-                <a href="coursedata.html" class="course-card-btn">More Info</a>
             </div>
-        </div>
+        </a>
+
     </div>
 </section>
 
 
-    <!-- Footer starts here -->
-    <footer>
-        <div class="footer-row">
-            <div class="footer-column branding-column">
-                <div class="footer-branding">
-                    <h2 class="brand-name logo-font">Edulec</h2>
-                </div>
-                <p class="footer-desc">Educational platform allowing users to learn in easy steps.</p>
-                <br>
-                <div class="footer-link-row">
-                    <a href="#aboutus" class="footer-link">About Us</a>
-                    <a href="#contact" class="footer-link"">Contact</a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <div class="footer-heading"><h3>Languages</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <div class="row footer-link-row">
-                    <div class="footer-link-column">
-                        <a href="#" class="footer-link">Hindi</a>
-                        <a href="#" class="footer-link">English</a>
-                    </div>
-                    <div class="footer-link-column">
-                        <a href="#" class="footer-link">Gujarati</a>
-                        <a href="#" class="footer-link">Marathi</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-column">
-                <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <div class="row footer-link-row">
-                    <div class="footer-link-column">
-                        <a href="#" class="footer-link">Terms & Conditions</a>
-                        <a href="#" class="footer-link">Privacy Policy</a>
-                    </div>
-                    <div class="footer-link-column">
-                        <a href="#" class="footer-link">EMI Module</a>
-                        <a href="affiliateform.html" class="footer-link">Affiliate Area</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-row">
-            <div class="social">
-                <i class="footer-icon bi bi-youtube"></i>
-                <i class="footer-icon bi bi-facebook"></i>
-                <i class="footer-icon bi bi-twitter"></i>
-                <i class="footer-icon bi bi-linkedin"></i>
-            </div>
-        </div>
-    </footer>
 
-    <script src="./js/navbar.js"></script>
+<script src="./js/navbar.js"></script>
 
 </body>
 </html>
