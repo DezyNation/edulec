@@ -26,6 +26,7 @@
     --colortwo: #6E7197;
     --colorthree: #224C82;
     --colorfour: #EEAB10;
+    --bgcolor: #0B192B;
     --light: #E7EDFA;
     --bordercolor: #3A77C4;
 }
@@ -40,9 +41,6 @@
     font-family: 'Gilroy-Regular', sans-serif;
 }
 
-section{
-    margin-bottom: 2rem;
-}
 
 #wrapper{
     position: relative;
@@ -491,7 +489,7 @@ nav a{
     margin-bottom: 0;
     width: 100%;
     height: auto;
-    background: url('../img/bottompath.svg') 0% 0% / cover no-repeat;
+    background: #FFF url('../img/bottompath.svg') 0% 0% / cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
