@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .form-sections-toggle{
     padding: 1vh 2vw;
     align-items: center;
@@ -6,7 +10,7 @@
     border-radius: 16px;
 }
 
-.form-sections-toggle button{
+.form-section-toggle-button{
     position: relative;
     margin: 1vh 2vw;
     padding: 1vh 1.5vw;
@@ -73,6 +77,12 @@ label{
     color: #000;
     text-transform: capitalize;
 }
+.price-breakdown{
+    font-size: .9vw;
+    color: gray;
+    text-transform: none;
+}
+
 input, textarea{
     position: relative;
     width: 100%;
@@ -91,6 +101,14 @@ textarea{
     width: 60%;
 }
 
+.extra-points-wrapper{
+    flex-wrap: wrap;
+}
+.extra-points{
+    position: relative;
+    margin: 1vh 2vw 1vh 0;
+    width: 45% !important;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

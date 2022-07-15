@@ -131,11 +131,13 @@ main{
 
 
 .overview-wrapper .price-card{
-    position: relative;
+    position: fixed;
+    right: 12vw;
     padding: 3vh 2vw;
     border-radius: .5rem;
     background: var(--colorone);
     justify-self: flex-end;
+    z-index: 10;
 }
 
 .course-category-img{

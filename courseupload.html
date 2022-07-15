@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <section>
+    <div>
         <div id="sidepanel">
             <a href="index.html" class="sidepanel-branding">
                 <svg
@@ -88,11 +88,11 @@
             <h1 class="dashboard-title">Course Upload</h1>
 
             <div class="row form-sections-toggle">
-                <button class="form-section-toggle-button">Basics</button>
-                <button class="form-section-toggle-button">Topics</button>
-                <button class="form-section-toggle-button">Lessons</button>
-                <button class="form-section-toggle-button">Pricing</button>
-                <button class="form-section-toggle-button">Extras</button>
+                <a href="#basics-form" class="form-section-toggle-button" >Basics</a>
+                <a href="#topics-form" class="form-section-toggle-button" >Topics</a>
+                <a href="#lessons-form" class="form-section-toggle-button" >Lessons</a>
+                <a href="#pricing-form" class="form-section-toggle-button" >Pricing</a>
+                <a href="#extras-form" class="form-section-toggle-button" >Extras</a>
             </div>
 
             <section id="basics-form" class="form-section">
@@ -155,24 +155,23 @@
                     </div>
                 </form>
             </section>
-            <section id="basics-form" class="form-section">
+
+            <section id="topics-form" class="form-section">
                 <form action="#">
                     <h1 class="form-title">Topics</h1>
                     <div class="form-column">
-                        <label for="topicurl">topic video URL</label>
-                        <input type="url" name="topicurl" id="topicurl" placeholder="Enter topic video URL">
+                        <label for="topiname">topic name</label>
+                        <input type="url" name="topiname" id="topiname" placeholder="Enter topic name">
                     </div>
                     <div class="form-row">
-                        <div class="form-column">
-                            <label for="topictime">topic starting time</label>
-                            <input type="number" name="topictime" id="topictime">
-                        </div>
                         <div class="form-column">
                             <label for="coursestatus">status</label>
                             <select name="status" id="status">
                                 <option value="enabled" selected>Enabled</option>
                                 <option value="disabled">Disabled</option>
                             </select>
+                        </div>
+                        <div class="form-column">
                         </div>
                     </div>
                     <div class="form-column">
@@ -190,7 +189,8 @@
                     </div>
                 </form>
             </section>
-            <section id="basics-form" class="form-section">
+
+            <section id="lessons-form" class="form-section">
                 <form action="#">
                     <h1 class="form-title">Lessons</h1>
                     <div class="form-row">
@@ -208,17 +208,19 @@
                         <label for="lessonname">lesson name</label>
                         <input type="text" name="lessonname" id="lessonname" placeholder="Enter lesson name">
                     </div>
+                    <div class="form-column">
+                        <label for="lessonurl">lesson video URL</label>
+                        <input type="text" name="lessonurl" id="lessonurl" placeholder="Enter lesson video URL">
+                    </div>
                     <div class="form-row">
-                        <div class="form-column">
-                            <label for="lessontime">lesson starting time</label>
-                            <input type="number" name="lessontime" id="lessontime">
-                        </div>
                         <div class="form-column">
                             <label for="lessonstatus">status</label>
                             <select name="lessonstatus" id="lessonstatus">
                                 <option value="enabled" selected>Enabled</option>
                                 <option value="disabled">Disabled</option>
                             </select>
+                        </div>
+                        <div class="form-column">
                         </div>
                     </div>
                     <div class="form-column">
@@ -232,7 +234,8 @@
                     </div>
                 </form>
             </section>
-            <section id="basics-form" class="form-section">
+
+            <section id="pricing-form" class="form-section">
                 <form action="#">
                     <h1 class="form-title">Pricing</h1>
                     <div class="form-row">
@@ -246,7 +249,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <label>3499 - 688 (GST) = ₹2811 (Your earnings)</label>
+                        <label class="price-breakdown">3499 - 688 (GST) = ₹2811 (Your earnings)</label>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
@@ -259,7 +262,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <label>2811 - 89 (Commission) - 49 (Dicount) = ₹2811 (Your earnings)</label>
+                        <label class="price-breakdown">2811 - 89 (Commission) - 49 (Discount) = ₹2811 (Your earnings)</label>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
@@ -272,7 +275,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <label>3499 - 129 (Commission) - 49 (Dicount) = ₹2811 (Your earnings)</label>
+                        <label class="price-breakdown">3499 - 129 (Commission) - 49 (Discount) = ₹2811 (Your earnings)</label>
                     </div>
                     <div class="form-row">
                         <button type="submit" class="form-reset"><i class="bi bi-x-lg"></i>&nbsp;&nbsp;Reset</button>
@@ -281,8 +284,48 @@
                 </form>
             </section>
 
+            <section id="extras-form" class="form-section">
+                <form action="#">
+                    <h1 class="form-title">Extra Details</h1>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="courseprice">course objectives</label>
+                            <div class="form-row extra-points-wrapper">
+                                <input type="text" name="objective" id="objective" class="extra-points">
+                            </div>
+                            <span class="form-submit">Add More&nbsp; <i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="courseprice">course requirements</label>
+                            <div class="form-row extra-points-wrapper">
+                                <input type="text" name="objective" id="objective" class="extra-points">
+                            </div>
+                            <span class="form-submit">Add More&nbsp; <i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="courseprice">target audience</label>
+                            <div class="form-row extra-points-wrapper">
+                                <input type="text" name="objective" id="objective" class="extra-points">
+                            </div>
+                            <span class="form-submit">Add More&nbsp; <i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <button type="submit" class="form-reset"><i class="bi bi-x-lg"></i>&nbsp;&nbsp;Reset</button>
+                        <button type="submit" class="form-submit"><i class="bi bi-check-lg"></i>&nbsp;&nbsp;Done</button>
+                    </div>
+                </form>
+            </section>
+
         </div>
-    </section>
+    </div>
 
     <div class="open-sidepanel" onclick="openSidePanel()"><i class="bi bi-menu-button-fill"></i></div>
     
