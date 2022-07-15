@@ -31,7 +31,7 @@ html{
     position: relative;
     width: 100%;
     height: auto;
-    margin: 1vh auto;
+    margin: 1vh auto 2vh;
     padding: 1vh auto;
 }
 .form-section form{
@@ -45,6 +45,7 @@ html{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 .form-title{
     position: relative;
@@ -91,10 +92,20 @@ input, textarea{
     outline: none;
     border: 1px solid rgb(220,220,220);
     border-radius: 8px;
+    transition: all .3s ease;
 }
 textarea{
     height: 30vh;
     resize: none;
+}
+
+input:focus{
+    border-color: #FFF;
+    box-shadow: -2px 0 20px rgba(0,0,0,0.1);
+}
+textarea:focus{
+    border-color: #FFF;
+    box-shadow: -2px 0 20px rgba(0,0,0,0.1);
 }
 
 .form-row .form-column input{

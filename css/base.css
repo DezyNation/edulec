@@ -73,6 +73,9 @@ a{
     text-align: center;
 }
 
+.full-width{
+    width: 100%;
+}
 .large{
     width: 60%;
     height: 100%;
@@ -85,6 +88,7 @@ a{
     width: 35%;
     height: 100%;
 }
+
 
 .align-left{
     align-items: flex-start !important;
