@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background: url('../img/coursesbg.jpg') center/cover no-repeat;
 }
@@ -311,4 +312,485 @@ body{
     .course-info-wrapper{
         padding: 1.5rem;
     }
+=======
+:root{
+    --colorone: #0C043E;
+    --colortwo: #6E7197;
+    --colorthree: #224C82;
+    --colorfour: #EEAB10;
+    --light: #E7EDFA;
+    --bgcolor: #0B192B;
+    --bordercolor: #3A77C4;
+}
+
+
+main{
+    background: var(--bgcolor);
+}
+
+.large{
+    width: 45vw !important;
+}
+.small{
+    width: 25vw;
+}
+
+
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 70% !important;
+    height: auto;
+}
+.horizontal-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.vertical-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.align-start{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.wrapper-title{
+    margin-bottom: 3vh;
+    align-self: flex-start;
+}
+
+
+.price-card{
+    position: relative;
+    width: 22vw;
+    height: auto;
+}
+
+
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15vh 0 5vh;
+    background: var(--bgcolor);
+    border-bottom-left-radius: 6rem;
+}
+
+
+.overview-wrapper{
+    align-items: flex-start !important;
+}
+
+
+.overview-video{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5vh;
+    border-radius: 1rem;
+}
+
+
+
+
+.overview-wrapper .content .course-title{
+    color: #FFF;
+    font-size: 2vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-transform: uppercase;
+}
+.overview-wrapper .content .course-category{
+    color: var(--light);
+}
+
+.star-rating-wrapper{
+    position: relative;
+    width: auto;
+    margin-bottom: .5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.star-rating-wrapper i{
+    margin: 0 .25vw;
+    color: var(--colorfour);
+}
+.reviews-count{
+    color: var(--light);
+    font-family: 'Gilroy-Regular', sans-serif;
+    text-align: center;
+}
+
+
+.overview-wrapper .course-desc{
+    position: relative;
+    width: auto;
+    margin-top: 5vh;
+    color: var(--light);
+}
+
+
+.overview-wrapper .price-card{
+    position: fixed;
+    right: 12vw;
+    padding: 3vh 2vw;
+    border-radius: .5rem;
+    background: var(--colorone);
+    justify-self: flex-end;
+    z-index: 10;
+}
+
+.course-category-img{
+    position: relative;
+    width: 6vw;
+    margin-bottom: 2vh;
+}
+.price-card .course-title{
+    color: #FFF;
+    font-size: 1.6vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.price-card .course-category{
+    margin-bottom: 5vh;
+    color: #FFF;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+
+.price-card .course-keypoints{
+    margin-bottom: 2vh;
+}
+.price-card .course-keypoints p{
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: .9vw;
+}
+.price-card .course-keypoints .lessons{
+    color: rgb(214, 30, 30);
+}
+.price-card .course-keypoints .duration{
+    color: rgb(23, 153, 228);
+}
+.price-card .course-keypoints .language{
+    color: var(--light);
+}
+.price-card .course-keypoints .level{
+    color: var(--colorfour);
+}
+
+
+.price-card .pricing-wrapper{
+    position: relative;
+    margin-top: 5vh;
+}
+.overview-wrapper .price-card .pricing-wrapper h1{
+    color: #FFF;
+    font-size: 1.25vw;
+}
+.ruppee-symbol{
+    position: absolute;
+    font-size: .9vw;
+    top: 0;;
+}
+
+
+.price-card .pricing-wrapper .buy-btn{
+    position: relative;
+    width: 100%;
+    margin-top: 2vh;
+    height: 8vh;
+    border-radius: .5rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+.overview-wrapper .price-card .pricing-wrapper .buy-btn{
+    background: linear-gradient(90deg, rgb(185, 135, 235), rgb(50, 50, 180));
+}
+
+
+
+
+
+
+.course-data-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10vh 0;
+    background: #FFF;
+    border-top-right-radius: 6rem;
+}
+
+
+.course-data-wrapper .price-card{
+    position: relative;
+    padding: 3vh 2vw;
+    border-radius: .5rem;
+    background: var(--colorone);
+    justify-self: flex-end;
+}
+
+.course-category-img{
+    position: relative;
+    width: 6vw;
+    margin-bottom: 2vh;
+}
+.price-card .course-title{
+    color: #FFF;
+    font-size: 1.6vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.price-card .course-category{
+    margin-bottom: 5vh;
+    color: #FFF;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+
+.price-card .course-keypoints{
+    margin-bottom: 2vh;
+}
+.price-card .course-keypoints p{
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: .9vw;
+}
+.price-card .course-keypoints .lessons{
+    color: rgb(214, 30, 30);
+}
+.price-card .course-keypoints .duration{
+    color: rgb(23, 153, 228);
+}
+.price-card .course-keypoints .language{
+    color: var(--light);
+}
+.price-card .course-keypoints .level{
+    color: var(--colorfour);
+}
+
+
+.price-card .pricing-wrapper{
+    position: relative;
+    margin-top: 5vh;
+}
+.course-data-wrapper .price-card .pricing-wrapper h1{
+    color: #FFF;
+    font-size: 1.25vw;
+}
+.ruppee-symbol{
+    position: absolute;
+    font-size: .9vw;
+    top: 0;;
+}
+
+
+.price-card .pricing-wrapper .buy-btn{
+    position: relative;
+    width: 100%;
+    margin-top: 2vh;
+    height: 8vh;
+    border-radius: .5rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+.course-data-wrapper .price-card .pricing-wrapper .buy-btn{
+    background: linear-gradient(90deg, rgb(210, 140, 0), #EEAB10);
+}
+
+
+.course-data-wrapper .curriculum-details{
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    color: darkslategray;
+}
+
+
+.accordion-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.accordion-div--main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 2vh 0 4vh;
+    padding: 2vh 1vw;
+    border-radius: .5rem;
+    background: #FFF;
+    border: 1px solid var(--light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.accordion-icon-box{
+    position: relative;
+    width: 2vw;
+    height: 3.25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accordion-icon-box .bi-dash-lg{
+    position: absolute;
+    top: 0;
+    font-size: 1.35vw;
+    color: blue;
+}
+.movable{
+    transition: .3s ease-in-out all;
+}
+.accordion-title{
+    color: blue;
+}
+
+.accordion-content{
+    position: relative;
+    top: -3vh;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: azure;
+}
+.active{
+    height: auto;
+    display: flex !important;
+}
+.accordion-doc{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    padding: 0 1vw;
+    border-top: 1px solid azure;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.accordion-doc-icon{
+    position: relative;
+    margin-right: 1vw;
+    font-size: 1vw;
+    color: darkslategray;
+}
+.accordion-doc-title{
+    font-size: 1vw;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: darkslategray;
+}
+
+
+
+.objectives-container{
+    position: relative;
+    width: 100%;
+    margin: 8vh 0;
+    padding: 3vh 2vw;
+    border-radius: .5rem;
+    border: 1px solid var(--light);
+}
+.objectives-wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.objectives-wrapper .objectives{
+    position: relative;
+    width: 45%;
+    height: auto;
+    margin: 1vh 0;
+}
+.objectives i{
+    margin-right: .5vw;
+    color: rgb(0, 145, 55);
+}
+.objectives p{
+    font-size: .9vw;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: darkslategray;
+}
+
+
+.req-wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.req-div{
+    position: relative;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+.req-ico{
+    margin-right: .5vw;
+    color: var(--bordercolor);
+}
+.req-txt{
+    font-size: 1vw;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: darkslategray;
+}
+
+
+.target-wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.target-div{
+    position: relative;
+    width: 100%;
+    padding-left: 2vw;
+    margin-bottom: 2vh;
+}
+.target-ico{
+    margin-right: .5vw;
+    color: green;
+}
+.target-txt{
+    font-size: 1vw;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: darkslategray;
+>>>>>>> 6101bbdd037310a622a4d5c0bd6ea2739d87ac57
 }
