@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edulec</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="mobile-nav-top">
+        <div class="open-mobile-nav" onclick="openNav()"><i class="bi bi-list"></i></div>
+        <a href="#" class="mobile-nav-branding">
+            <svg
+            width="24"
+            height="24"
+            viewBox="0 0 6.3499999 6.3500002"
+            version="1.1"
+            id="svg5"
+            class="nav-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+            <defs
+                id="defs2" />
+            <path
+                id="path846"
+                style="fill:#ffffff;stroke:none;stroke-width:0.0819969;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
+                d="M 3.175 0 A 3.175 3.1749942 0 0 0 0 3.175 A 3.175 3.1749942 0 0 0 0.96686606 5.4539307 L 4.4545085 3.4406169 C 4.5162087 3.4049949 4.5830207 3.3871231 4.6493286 3.3853231 C 4.7952065 3.3813826 4.9378613 3.4557709 5.0162313 3.5915121 C 5.1302243 3.7889535 5.0632943 4.0397588 4.8658529 4.1537517 L 1.697054 5.9825806 A 3.175 3.1749942 0 0 0 3.175 6.35 A 3.175 3.1749942 0 0 0 6.35 3.175 A 3.175 3.1749942 0 0 0 5.3841675 0.89503581 L 1.8954916 2.9093832 C 1.6980502 3.0233754 1.4477614 2.9559292 1.3337687 2.758488 C 1.219776 2.5610469 1.286706 2.3102412 1.4841471 2.1962484 L 4.6544963 0.36586914 A 3.175 3.1749942 0 0 0 3.175 0 z M 1.697054 5.9825806 A 3.175 3.1749941 0 0 1 1.1069092 5.5810547 A 3.175 3.1749942 0 0 0 1.697054 5.9825806 z M 0.96686606 5.4539307 A 3.175 3.1749942 0 0 0 1.0939901 5.5702027 A 3.175 3.1749941 0 0 1 0.96686606 5.4539307 z M 4.2374675 2.1435384 C 4.3833451 2.1395981 4.5265169 2.2134698 4.6048869 2.3492106 C 4.7188797 2.5466519 4.6519498 2.7974574 4.4545085 2.9114502 L 2.3073527 4.1511678 C 2.1099114 4.2651606 1.8591059 4.1982307 1.7451131 4.0007894 C 1.6311203 3.8033481 1.6980502 3.5525426 1.8954916 3.4385498 L 4.0426473 2.1988322 C 4.1043478 2.1632094 4.1711594 2.1453295 4.2374675 2.1435384 z " />
+            </svg>
+            <h2>EDULEC</h2>
+        </a>
+    </div>
+
+    <aside id="mobile-nav">
+        <div class="mobile-menu">
+            <a href="affiliateform.html" class="mobile-menu--item">Affiliate Area</a>
+            <a href="job.html" class="mobile-menu--item">Get a job</a>
+            <a href="subscription.html" class="mobile-menu--item">Corporate Subscription</a>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="register.html" class="mobile-menu--item">Register</a>
+            <a href="login.html" class="mobile-menu--item login">Login</a>
+        </div>
+        <a href="#" class="mobile-nav-branding">
+            <svg
+            width="24"
+            height="24"
+            viewBox="0 0 6.3499999 6.3500002"
+            version="1.1"
+            id="svg5"
+            class="nav-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg">
+            <defs
+                id="defs2" />
+            <path
+                id="path846"
+                style="fill:#ffffff;stroke:none;stroke-width:0.0819969;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
+                d="M 3.175 0 A 3.175 3.1749942 0 0 0 0 3.175 A 3.175 3.1749942 0 0 0 0.96686606 5.4539307 L 4.4545085 3.4406169 C 4.5162087 3.4049949 4.5830207 3.3871231 4.6493286 3.3853231 C 4.7952065 3.3813826 4.9378613 3.4557709 5.0162313 3.5915121 C 5.1302243 3.7889535 5.0632943 4.0397588 4.8658529 4.1537517 L 1.697054 5.9825806 A 3.175 3.1749942 0 0 0 3.175 6.35 A 3.175 3.1749942 0 0 0 6.35 3.175 A 3.175 3.1749942 0 0 0 5.3841675 0.89503581 L 1.8954916 2.9093832 C 1.6980502 3.0233754 1.4477614 2.9559292 1.3337687 2.758488 C 1.219776 2.5610469 1.286706 2.3102412 1.4841471 2.1962484 L 4.6544963 0.36586914 A 3.175 3.1749942 0 0 0 3.175 0 z M 1.697054 5.9825806 A 3.175 3.1749941 0 0 1 1.1069092 5.5810547 A 3.175 3.1749942 0 0 0 1.697054 5.9825806 z M 0.96686606 5.4539307 A 3.175 3.1749942 0 0 0 1.0939901 5.5702027 A 3.175 3.1749941 0 0 1 0.96686606 5.4539307 z M 4.2374675 2.1435384 C 4.3833451 2.1395981 4.5265169 2.2134698 4.6048869 2.3492106 C 4.7188797 2.5466519 4.6519498 2.7974574 4.4545085 2.9114502 L 2.3073527 4.1511678 C 2.1099114 4.2651606 1.8591059 4.1982307 1.7451131 4.0007894 C 1.6311203 3.8033481 1.6980502 3.5525426 1.8954916 3.4385498 L 4.0426473 2.1988322 C 4.1043478 2.1632094 4.1711594 2.1453295 4.2374675 2.1435384 z " />
+            </svg>
+            <h2>EDULEC</h2>
+        </a>
+        <div class="close-mobile-nav" onclick="closeNav()"><i class="bi bi-x-lg"></i></div>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+            </div>
+            <div class="nav-right">
+                    <a href="#" class="nav-link nav-course">
+                        Courses
+                        
+
+                        <!-- Courses Category Dropdown Meny -->
+                        <div class="category-menu-wrapper">
+                            <div class="dropdown category-menu">
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Course Category</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Course Category</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Course Category</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+                    </a>
+                    <a class="nav-link" href="affiliateform.html">Affiliate</a>
+                    <a class="nav-link" href="job.html">Get a job</a>
+                    <a class="nav-link nav-corporate" href="subscription.html">Corporate Subscription</a>
+                    <div class="login" onclick="openAuth()"><h3>log in | sign up</h3></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="hero-container">
+            <div class="container-left hero-left">
+                <h1 class="sentence">
+                    Take Your Learning<br>
+                    To The Next Level.
+                </h1>
+                <p>Learn anything in your prefered language at your comfort<br>from home.</p>
+                <a href="#" class="play">
+                    <img src="./img/play-btn.png" alt="EduLec" class="play-btn">
+                    <p><u>What's EduLec?</u></p>
+                </a>
+            </div>
+            <div class="container-right hero-right">
+                <img src="./img/hero-img.png" alt="Edulec" class="people-img">
+            </div>
+        </div>
+        <div class="hero-cards-row">
+            <div class="hero-card">
+                <img src="./img/icon1.png" class="hero-card-icon">
+                <h2 class="hero-card-title" style="color: #1CC298;">Get Certificates</h2>
+            </div>
+            <div class="hero-card">
+                <img src="./img/icon2.png" class="hero-card-icon">
+                <h2 class="hero-card-title" style="color: #7652D4;">Job Placement</h2>
+            </div>
+            <div class="hero-card">
+                <img src="./img/icon3.png" class="hero-card-icon">
+                <h2 class="hero-card-title" style="color: #6278FD;">1 to 1 Doubt Solve</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="wrapper" class="courses-section vertical-wrapper">
+        <h1 class="section-title">Our Popular Courses</h1>
+        <p class="section-subtitle">Discover some of the many benefits you will enjoy when you<br>add us to your online learning platform.</p>
+        <div class="courses-wrapper horizontal-wrapper">
+
+            <a href="#" class="course-card-container">
+                <div class="course-card--top-border"></div>
+                <div class="course-card--bottom-border"></div>
+                <div class="course-card">
+                    <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                    <div class="course-card-content">
+                        <div class="course-card-content--row">
+                            <p class="course-card-flag">English</p>
+                            <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                        </div>
+                        <h3 class="course-card-title">
+                            master english: how to improve your english speaking
+                        </h3>
+                        <div class="course-card-content--row align-bottom">
+                            <p class="course-card-feature">
+                                <i class="bi bi-play-circle-fill"></i>
+                                10x Lessons
+                            </p>
+                            <p class="course-card-feature">
+                                <i class="bi bi-camera-video-fill"></i>
+                                Online
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="#" class="course-card-container">
+                <div class="course-card--top-border"></div>
+                <div class="course-card--bottom-border"></div>
+                <div class="course-card">
+                    <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                    <div class="course-card-content">
+                        <div class="course-card-content--row">
+                            <p class="course-card-flag">English</p>
+                            <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                        </div>
+                        <h3 class="course-card-title">
+                            master english: how to improve your english speaking
+                        </h3>
+                        <div class="course-card-content--row align-bottom">
+                            <p class="course-card-feature">
+                                <i class="bi bi-play-circle-fill"></i>
+                                10x Lessons
+                            </p>
+                            <p class="course-card-feature">
+                                <i class="bi bi-camera-video-fill"></i>
+                                Online
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="course-card-container">
+                <div class="course-card--top-border"></div>
+                <div class="course-card--bottom-border"></div>
+                <div class="course-card">
+                    <img src="./img/profilepic.jpg" alt="Video Thumbnail" class="course-card-thumbnail">
+                    <div class="course-card-content">
+                        <div class="course-card-content--row">
+                            <p class="course-card-flag">English</p>
+                            <span class="course-card-flag rating-flag"><i class="bi bi-star-fill course-card-starrating"></i><span class="course-card-numrating">4.6</span></span>
+                        </div>
+                        <h3 class="course-card-title">
+                            master english: how to improve your english speaking
+                        </h3>
+                        <div class="course-card-content--row align-bottom">
+                            <p class="course-card-feature">
+                                <i class="bi bi-play-circle-fill"></i>
+                                10x Lessons
+                            </p>
+                            <p class="course-card-feature">
+                                <i class="bi bi-camera-video-fill"></i>
+                                Online
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="vertical-wrapper">
+            <a href="#" class="index-explore-btn">Explore All Courses</a>
+        </div>
+    </section>
+
+    <br><br><br>
+    <section id="wrapper" class="benefits">
+        <div class="horizontal-wrapper">
+            <div class="equal">
+                <div class="vertical-wrapper">
+                    <img src="./img/khushbu.png" alt="Khushbu Mali" class="khushbumali benefits-img">
+                </div>
+            </div>
+            <div class="equal flex-start">
+                <h1 class="benefits-container-title">Why you should learn from EduLec?</h1>
+                <div class="benefits-row">
+                    <!-- <i class="benefits-icon gd-green bi bi-patch-check"></i> -->
+                    <img src="./img/icon1.png" alt="" class="benefits-icon">
+                    <div class="benefits-content">
+                        <h3 class="benefits-title">Online Degrees</h3>
+                        <p class="benefits-desc">Lorem ipsum dolor sit elit. Molestias itaque officiis quasi repellendus inventore optio.</p>
+                    </div>
+                </div>
+                <div class="benefits-row">
+                    <!-- <i class="benefits-icon rd-green bi bi-hourglass-split"></i> -->
+                    <img src="./img/icon2.png" alt="" class="benefits-icon">
+                    <div class="benefits-content">
+                        <h3 class="benefits-title">Short Courses</h3>
+                        <p class="benefits-desc">Lorem ipsum dolor sit elit. Molestias itaque officiis quasi repellendus inventore optio.</p>
+                    </div>
+                </div>
+                <div class="benefits-row">
+                    <!-- <i class="benefits-icon gd-green bi bi-emoji-smile"></i> -->
+                    <img src="./img/icon3.png" alt="" class="benefits-icon">
+                    <div class="benefits-content">
+                        <h3 class="benefits-title">Learn with Experts</h3>
+                        <p class="benefits-desc">Lorem ipsum dolor sit elit. Molestias itaque officiis quasi repellendus inventore optio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+    <section id="wrapper" class="experts-section">
+        <div class="equal flex-start">
+            <h1 class="benefits-container-title">Industry Expert Trainer</h1>
+            <p class="benefits-desc" style="max-width: 85%;">
+                Your skills and knowledge are the only things that can set you apart from the rest of the crowd. 
+                I know that having practical knowledge of whatever tools you're gonna work 
+                within your dream job is crucial nowadays to stay ahead.
+            </p>
+            <p class="benefits-desc" style="max-width: 85%;">
+                That's why I and our team built Edulec! 
+                The one stop solution to explore new skillsets in IT industry. 
+                It doesn't matter whether you're just a beginner or a working professional, 
+                we always have something for you to learn. Join us and explore your potential!
+            </p>
+            <p class="benefits-desc" style="max-width: 85%;">
+                Feel free to connect with me!
+            </p>
+            <a href="#" class="linkedin-btn">Connect on Linkedin</a>
+        </div>
+        <div class="equal">
+            <div class="vertical-wrapper">
+                <img src="./img/khushbu.png" alt="Khushbu Mali" class="khushbumali">
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <section id="wrapper" class="softwares">
+        <div class="softwares-container vertical-wrapper">
+            <h1 class="section-title">Softwares To Learn</h1>
+            <p class="section-subtitle" style="max-width: 40%;">Discover some of the many benefits you will enjoy when you add us to your online learning platform.</p>
+            <div class="softwares-row horizontal-wrapper">
+                <div class="software-card vertical-wrapper">
+                    <img src="./img/accounts.png" alt="Accounting" class="software-card-img">
+                    <h3 class="software-card-title">Accounting</h3>
+                    <a href="#" class="software-card-btn">Show Me</a>
+                </div>
+                <div class="software-card vertical-wrapper">
+                    <img src="./img/accounts.png" alt="Accounting" class="software-card-img">
+                    <h3 class="software-card-title">Programming</h3>
+                    <a href="#" class="software-card-btn">Show Me</a>
+                </div>
+                <div class="software-card vertical-wrapper">
+                    <img src="./img/accounts.png" alt="Accounting" class="software-card-img">
+                    <h3 class="software-card-title">Presentation</h3>
+                    <a href="#" class="software-card-btn">Show Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="auth-section">
+        <div id="auth-wrapper" class="horizontal-wrapper">
+            <div class="left">
+                <img src="./img/loginimg.png" id="auth-left-img">
+            </div>
+            <div class="right vertical-wrapper flex-start">
+                <h1 class="form-title" id="form-title">Sign In</h1>
+                <form action="">
+                    <div class="form-input-row">
+                        <i class="bi bi-person-fill"></i>
+                        <input type="text" name="email" id="email" placeholder="Your Email ID">
+                    </div>
+                    <div class="form-input-row">
+                        <i class="bi bi-key-fill"></i>
+                        <input type="password" name="password" id="password" placeholder="Your Password">
+                    </div>
+                    <div class="horizontal-wrapper" id="signup-wrapper">
+                        <button type="submit" class="auth-submit-btn">Sign Up</button>
+                        <a href="#" class="auth-videolink-div">
+                            <img src="./img/play-btn.png">
+                            <p>Know More</p>
+                        </a>
+                    </div>
+                    <div class="horizontal-wrapper" id="signin-wrapper">
+                        <div class="remember-row">
+                            <input type="checkbox" name="remember" id="remember">
+                            <p>Remember me</p>
+                        </div>
+                        <button type="submit" class="auth-submit-btn">Sign In</button>
+                    </div>
+                </form>
+                <br>
+                <div class="social-wrapper vertical-wrapper">
+                    <a href="#" id="signup-txt" onclick="prepareSignup()"><strong>Create your account</strong></a>
+                    <a href="#" id="signin-txt" onclick="prepareSignin()"><strong>Already have account? Login here</strong></a>
+                    <br>
+                    <div class="form-row">
+                        <p>Or login with:</p>
+                        <a href="#" class="social-login-btn"><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close-auth-wrapper" onclick="closeAuth()">
+            <i class="bi bi-x-circle-fill close-wrapper" onclick="closeAuth()"></i>
+        </div>
+    </section>
+
+
+    <section class="bottom">
+
+        <div class="newsletter-container">
+            <div class="newsletter-wrapper">
+                <h1 class="section-title">Get In Touch</h1>
+                <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium rem illo reiciendis.</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your Email ID">
+                    <button type="submit" class="newsletter-form-submit">SEND</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer starts here -->
+        <footer>
+            <div class="footer-row">
+                <div class="footer-column branding-column">
+                    <div class="footer-branding">
+                        <!-- <h2 class="brand-name logo-font">Edulec</h2> -->
+                        <img src="./img/logo-img.png" alt="EduLec" class="brand-img">
+                    </div>
+                    <p class="footer-desc">Educational platform allowing users to learn in easy steps.</p>
+                    <!-- <br>
+                    <div class="row footer-link-row">
+                        <a href="#aboutus" class="footer-link">About Us</a>
+                        <a href="#contact" class="footer-link"">Contact</a>
+                    </div> -->
+                </div>
+                <div class="footer-column">
+                    <div class="footer-heading"><h3>Languages</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                    <div class="row footer-link-row">
+                        <div class="footer-link-column">
+                            <a href="#" class="footer-link">Hindi</a>
+                            <a href="#" class="footer-link">English</a>
+                        </div>
+                        <div class="footer-link-column">
+                            <a href="#" class="footer-link">Gujarati</a>
+                            <a href="#" class="footer-link">Marathi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-heading"><h3>Links</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                    <div class="row footer-link-row">
+                        <div class="footer-link-column">
+                            <a href="#" class="footer-link">Terms & Conditions</a>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                        </div>
+                        <div class="footer-link-column">
+                            <a href="#" class="footer-link">EMI Module</a>
+                            <a href="affiliateform.html" class="footer-link">Affiliate Area</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-heading"><h3>Contact Us</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                    <div class="footer-link-column">
+                        <a href="tel: +919819195589" class="footer-link">+919819195589</a>
+                        <a href="mailto: support@edulec.in" class="footer-link">support@edulec.in</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="footer-row">
+                <div class="social">
+                    <a href="#"><img src="./img/twitter.png" alt="Twitter" class="footer-icon"></a>
+                    <a href="#"><img src="./img/fb.png" alt="Facebook" class="footer-icon"></a>
+                    <a href="#"><img src="./img/yt.png" alt="YouTube" class="footer-icon"></a>
+                    <a href="#"><img src="./img/linkedin.png" alt="Linkedin" class="footer-icon"></a>
+                </div>
+            </div>
+            <!-- <hr class="line"> -->
+            <div class="copyright">
+                <p>&copy; Copyright 2022 All Rights Reserved - Edulec</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
