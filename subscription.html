@@ -135,46 +135,50 @@
 
 
                     </a>
-                    <a class="nav-link" href="affiliateform.html">Affiliate</a>
-                    <a class="nav-link" href="job.html">Get a job</a>
+                    <a class="nav-link" href="dashaffiliates.html">Affiliate</a>
+                    <a class="nav-link" href="#">Get a job</a>
                     <a class="nav-link nav-corporate" href="subscription.html">Corporate Subscription</a>
                     <div class="login" onclick="openAuth()"><h3>log in | sign up</h3></div>
             </div>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-container">
-            <div class="container-left hero-left">
-                <h1 class="sentence">
+    
+    <section class="hero">
+        <div class="wrapper horizontal-wrapper overview-wrapper">
+            <div class="large">
+                <h1 class="hero-title">
                     Got some doubts?<br>
                     We're here!
                 </h1>
-                <p>Simply select your topic and subscription package to get your doubts answered</p>
+                <p class="hero-desc">Simply select your topic and subscription package to get your doubts answered</p>
                 <a href="#" class="play">
                     <img src="./img/play-btn.png" alt="EduLec" class="play-btn">
                     <p><u>How it works?</u></p>
                 </a>
             </div>
-            <div class="container-right hero-right">
+            <div class="small">
                 <div class="people-img">
                     <img src="./img/quesmark.png" alt="Edulec" class="qmark-img">
                 </div>
             </div>
         </div>
-    </div>
-
-    <section class="subscription-card-wrapper">
-        <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
-        <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
     </section>
+
+    <main>
+        <section class="subscription-card-wrapper">
+            <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>Microsoft Excel</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>VBA & Macro</h3></div>
+            <div class="subscription-card" onclick="openPackages()"><h3>Excel Dashboard</h3></div>
+        </section>
+    </main>
+
 
     <section id="subscription-package-section">
         <div class="subscriptions-container">
@@ -201,8 +205,7 @@
                 </div>
             </div>
         </div>
-
-        <i class="close-btn bi bi-x-circle" onclick="closePackages()"></i>
+        <div id="pseudo-container" onclick="closePackages()"></div>
     </section>
 
 

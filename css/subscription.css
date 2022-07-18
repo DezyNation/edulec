@@ -3,59 +3,92 @@
     --colorone: #0C043E;
     --colortwo: #6E7197;
     --colorthree: #224C82;
-    --colorfour: #eed810;
+    --colorfour: #EEAB10;
     --light: #E7EDFA;
+    --bgcolor: #0B192B;
     --bordercolor: #3A77C4;
+}
+
+
+main{
+    background: var(--bgcolor);
+}
+
+.large{
+    width: 45vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.small{
+    width: 25vw;
+}
+
+
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 70% !important;
+    height: auto;
+}
+.horizontal-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.vertical-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.align-start{
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
 .hero{
     position: relative;
     width: 100%;
-    height: 140vh;
-    background: url('../img/heropath.svg') 0% 0% / cover no-repeat;
-    overflow: hidden;
-}
-
-.hero-container{
-    position: relative;
-    top: 5vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-left, .hero-right{
-    width: 35%;
     height: auto;
+    padding: 15vh 0 5vh;
+    background: var(--bgcolor);
+    border-bottom-left-radius: 6rem;
 }
 
-.hero-left{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-    color: #FFF;
+
+.overview-wrapper{
+    align-items: flex-start !important;
 }
-.hero-left h1{
+
+.hero-title{
+    position: relative;
+    font-size: 4vw;
     margin-bottom: 2vh;
-    font-size: 3.5vw;
-    font-family: 'Gilroy-Bold';
-    letter-spacing: -.01rem;
+    color: #FFF;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
-.hero-left p{
-    font-family: 'Gilroy-Regular';
-    font-size: 1vw;
-    font-weight: 300;
+.hero-desc{
+    position: relative;
+    margin: 2vh 0;
+    max-width: 70%;
+    font-size: 1.2vw;
     color: var(--light);
+    font-family: 'Gilroy-Medium', sans-serif;
 }
+
 .play{
     position: relative;
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -75,48 +108,27 @@
     color: var(--light);
 }
 
-
-
-
-
-.hero-right{
-    position: relative;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.people-img{
-    position: relative;
-    margin-right: -15vw;
-    width: 50vw;
-    align-self: flex-end;
-    display: grid;
-    place-content: center;
-    height: auto;
-}
 .qmark-img{
     position: relative;
-    width: 40vw;
+    width: 30vw;
     height: auto;
 }
-
 
 
 .subscription-card-wrapper{
     position: relative;
-    margin: 5vh auto 15vh;
-    width: 80%;
+    width: 100%;
     height: auto;
+    padding: 10vh 10vw;
+    background: #FFF;
+    border-top-right-radius: 6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .subscription-card{
     position: relative;
     width: 24vw;
@@ -169,6 +181,7 @@
     align-items: center;
     justify-content: center;
     transition: all .3s ease;
+    z-index: 300;
 }
 .subscriptions-container h3{
     text-align: center;

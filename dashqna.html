@@ -74,7 +74,7 @@
                 <a href="dashcertificates.html" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-patch-check-fill"></i><p>My Certificates</p></a>
                 <a href="dashaffiliates.html" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-person-plus-fill"></i><p>Affiliate</p></a>
                 <!-- <a href="#" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-person-workspace"></i><p>Job Panel</p></a> -->
-                <a href="dashqna.html" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-chat-dots-fill"></i><p>QnA</p></a>
+                <a href="#" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-chat-dots-fill"></i><p>QnA</p></a>
                 <a href="#" class="sidepanel-link"><i class="sidepanel-menu--link-ico bi bi-broadcast"></i><p>Broadcast</p></a>
                 <a href="#" class="sidepanel-link logout"><i class="sidepanel-menu--link-ico bi bi-power"></i><p>Logout</p></a>
                 <a href="#" class="sidepanel-link support"><i class="sidepanel-menu--link-ico bi bi-heart-fill"></i><p>Help & Support</p></a>
@@ -83,28 +83,71 @@
         </div>
 
         <div class="dashboard-container">
-            <h1 class="dashboard-title">Your Certificates</h1>
+            
+            <div class="row">
+                <form action="#" class="dashboard-search-form">
+                    <input type="text" name="searchq" placeholder="Search in My Courses">
+                    <button type="submit">Search</button>
+                </form>
+                <a href="#" class="dashboard-home-btn"><i class="bi bi-house-door-fill"></i></a>
+            </div>
+
+
+            <h1 class="dashboard-title">My Queries</h1>
 
             <div id="wrapper">
 
-                <div href="#" class="card dashcourse-card">
-                    <img src="./img/certificate.png" alt="Certificate Name" class="dashcertificate-img">
-                    <a href="#"><h3 class="dashcertificate-download"><i class="bi bi-download"></i></h3></a>
-                </div>
-                <div href="#" class="card dashcourse-card">
-                    <img src="./img/certificate.png" alt="Certificate Name" class="dashcertificate-img">
-                    <a href="#"><h3 class="dashcertificate-download"><i class="bi bi-download"></i></h3></a>
+                <div class="query-wrapper card">
+                    <a href="#" class="query-video-thumbnail"><img src="./img/signup.jpg" class="query-video-thumbnail"></a>
+                    <div class="vertical-wrapper query-wrapper-content" onclick="openQueryPopup()">
+                        <h2 class="query-lesson-name">Lesson Name</h2>
+                        <p class="query-msg">Query message will show up here...</p>
+                        <p class="sender">Sangam replied</p>
+                    </div>
+                    <div class="vertical-wrapper">
+                        <a href="#" class="query-reply">Reply &nbsp;<i class="bi bi-send-fill"></i></a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <a href="#" class="open-notifications"><i class="bi bi-bell-fill"></i></a>
     <div class="open-sidepanel" onclick="openSidePanel()"><i class="bi bi-menu-button-fill"></i></div>
     
+    <section id="query-popup">
+        <div id="query-container" class="query-container card">
+            <h4>
+                Your query about
+                <br>
+                Lesson name will appear here
+            </h4>
+            <div class="vertical-wrapper receiver-msg-div">
+                <p class="sender">You messaged:</p>
+                <p class="query-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe, distinctio ipsum quibusdam soluta provident facere impedit a mollitia error.</p>
+            </div>
+            <div class="vertical-wrapper sender-msg-div">
+                <p class="sender">Sangam replied:</p>
+                <p class="query-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe, distinctio ipsum quibusdam soluta provident facere impedit a mollitia error.</p>
+            </div>
+            <div class="vertical-wrapper">
+                <a href="#" class="query-reply">Reply &nbsp;<i class="bi bi-send-fill"></i></a>
+            </div>
+        </div>
+        <div id="pseudo-container" onclick="closeQueryPopup()"></div>
+    </section>
+
 
     <script src="./js/dashboard.js"></script>
+    <script>
+        const querypopup = document.getElementById("query-popup");
+        function openQueryPopup(){
+            querypopup.style.display = "grid";
+        }
+        function closeQueryPopup(){
+            querypopup.style.display = "none";
+        }
+    </script>
 
 </body>
 </html>

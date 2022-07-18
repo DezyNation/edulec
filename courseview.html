@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edulec</title>
+
+    <link rel="stylesheet" href="css/courseview.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    
+    <div class="mobile-nav-top">
+        <div class="open-mobile-nav" onclick="openNav()"><i class="bi bi-list"></i></div>
+        <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+    </div>
+
+    <aside id="mobile-nav">
+        <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+        <a href="#" class="mobile-menu--item mobile-nav-course">
+            Courses &nbsp;&nbsp; <i class="bi bi-chevron-down" style="position: relative; top: .25vh;"></i>
+
+            <div class="mobile-dropdown mobile-course-category">
+                Language &nbsp;&nbsp; <i class="bi bi-chevron-down" style="position: relative; top: .25vh;"></i>
+
+                <div class="mobile-dropdown mobile-course-name-dropdown">
+                    <a href="#" class="mobile-course-name">Course Name</a>
+                    <a href="#" class="mobile-course-name">Course Name</a>
+                    <a href="#" class="mobile-course-name">Course Name</a>
+                </div>
+
+            </div>
+        </a>
+        <a class="mobile-menu--item">Affiliate</a>
+        <a href="#" class="mobile-menu--item">Get a job</a>
+        <a href="#" class="mobile-menu--item ">Corporate Subscription</a>
+        
+        <div class="close-mobile-nav" onclick="closeNav()"><i class="bi bi-x-lg"></i></div>
+    </aside>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="./img/logo-img.png" alt="EduLec" class="nav-branding">
+            </div>
+            <div class="nav-right">
+                    <a href="#" class="nav-link nav-course">
+                        Courses
+                        
+
+                        <!-- Courses Category Dropdown Meny -->
+                        <div class="category-menu-wrapper">
+                            <div class="dropdown category-menu">
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Language</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Language</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="dropdown-link">
+                                    <p class="category-link dropdown-link--text">Language</p>
+                                    <i class="bi bi-chevron-right"></i>
+
+                                    <!-- Courses Sub Menu -->
+                                    <div class="category-submenu-wrapper">
+                                        <div class="dropdown category-submenu">
+
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+                                            <div class="dropdown-link">
+                                                <h3 class="dropdown-link--text">Course Name</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+                    </a>
+                    <a class="nav-link" href="affiliateform.html">Affiliate</a>
+                    <a class="nav-link" href="job.html">Get a job</a>
+                    <a class="nav-link nav-corporate" href="subscription.html">Corporate Subscription</a>
+                    <a href="dashboard.html" class="login"><h3>Dashboard</h3></a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="courseview-container" id="main" onclick="closeChat()">
+        <div id="sidepanel">
+
+            <p class="sidepanel-title bg-blue">Lesson List <i class="bi bi-book"></i></p>
+            
+            <div class="accordion-wrapper">
+                <div class="accordion-div--main" id="accordion">
+                    <div class="accordion-icon-box"><i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg movable-minus movable" id="movable-minus"></i></div>
+                    <h4 class="accordion-title">Topic Title</h4>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-file-earmark-text accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Accordion Doc Name</p>
+                    </a>
+
+                </div>
+
+
+                <div class="accordion-div--main" id="accordion">
+                    <div class="accordion-icon-box"><i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg movable-minus movable" id="movable-minus"></i></div>
+                    <h4 class="accordion-title">Topic Title</h4>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-file-earmark-text accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Accordion Doc Name</p>
+                    </a>
+
+                </div>
+
+
+                <div class="accordion-div--main" id="accordion">
+                    <div class="accordion-icon-box"><i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg movable"></i></div>
+                    <h4 class="accordion-title">Topic Title</h4>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-file-earmark-text accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Accordion Doc Name</p>
+                    </a>
+
+                </div>
+
+
+                <div class="accordion-div--main" id="accordion">
+                    <div class="accordion-icon-box"><i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg movable"></i></div>
+                    <h4 class="accordion-title">Topic Title</h4>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-youtube accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Lesson Name</p>
+                    </a>
+                    <a href="#" class="accordion-doc">
+                        <i class="bi bi-file-earmark-text accordion-doc-icon"></i>
+                        <p class="accordion-doc-title">Accordion Doc Name</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <i class="bi bi-x-circle-fill close-sidepanel" onclick="closeSidePanel()"></i>
+        </div>
+
+        <div class="dashboard-container">
+            
+            <!-- <div class="row">
+                <form action="#" class="dashboard-search-form">
+                    <input type="text" name="searchq" placeholder="Search in My Courses">
+                    <button type="submit">Search</button>
+                </form>
+                <a href="#" class="dashboard-home-btn"><i class="bi bi-house-door-fill"></i></a>
+            </div> -->
+
+
+            <h1 class="dashboard-title">Course Name</h1>
+
+            <div id="wrapper" class="vertical-wrapper courseview-wrapper">
+
+                <iframe src="https://www.youtube.com/embed/rUWxSEwctFU" title="YouTube video player" class="courseview--video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card vertical-wrapper courseview-card">
+                    <h3 class="courseview-card--title">Topic - Topic Name will be shown here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore alias cupiditate animi omnis nihil quae ad nostrum quas harum eius odio reiciendis repellendus dignissimos recusandae, error vero similique ducimus.</p>
+                </div>
+                <div class="card vertical-wrapper courseview-card">
+                    <h3 class="courseview-card--title">Lesson - Lesson Name will be shown here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore alias cupiditate animi omnis nihil quae ad nostrum quas harum eius odio reiciendis repellendus dignissimos recusandae, error vero similique ducimus.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="open-sidepanel" onclick="openSidePanel()"><i class="bi bi-menu-button-fill"></i></div>
+
+    <a class="chatbtn bg-blue" onclick="openChat()"><i class="bi bi-chat-dots-fill"></i></a>
+    <div class="qnaform-container" id="qnaform">
+        <h2 class="qnaform-title bg-blue">Ask Queries</h2>
+        <form action="#" class="qnaform">
+            <div class="form-column">
+                <label for="lessonname">Lesson Name:</label>
+                <input type="text" name="lessonname" id="lessonid" value="Lesson Name" disabled>
+            </div>
+            <div class="form-column">
+                <label for="query">Your Query:</label>
+                <textarea name="query" id="query" cols="30" rows="10" placeholder="Type your query here..."></textarea>
+            </div>
+            <button type="submit" class="qnaform-submit bg-blue"><i class="bi bi-send-fill"></i>&nbsp;&nbsp;Send</button>
+        </form>
+    </div>
+    
+
+
+    <script src="./js/qna.js"></script>
+    <script src="./js/accordion.js"></script>
+
+</body>
+</html>
