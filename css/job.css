@@ -1,0 +1,179 @@
+
+:root{
+    --colorone: #0C043E;
+    --colortwo: #6E7197;
+    --colorthree: #224C82;
+    --colorfour: #EEAB10;
+    --bgcolor: #0B192B;
+    --light: #E7EDFA;
+    --bordercolor: #3A77C4;
+}
+
+body{
+    background: var(--bgcolor);
+}
+
+.form-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15vh 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-section .left, .form-section .right{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-title{
+    position: relative;
+    margin-bottom: 5vh;
+    font-size: 2vw;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 5vh;
+}
+
+.form-row{
+    position: relative;
+    margin: 2vh auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.label, label{
+    position: relative;
+    margin-bottom: .5vh;
+    font-size: 1.25vw;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+input, select{
+    position: relative;
+    width: 100%;
+    padding: 1.5vh 1vw;
+    border-radius: 12px;
+    background: aqua;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    outline: none;
+    border: none;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.75);
+}
+.right-column{
+    margin-left: 2.5vw;
+}
+
+.right .fileupload{
+    width: 100%;
+    color: #000;
+}
+
+.text-center{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+.exp-row{
+    position: relative;
+    width: 100%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.exp-btn{
+    position: relative;
+    width: 45%;
+    padding: 1.5vh 1vw;
+    border-radius: 12px;
+    background: aqua;
+    display: grid;
+    place-content: center;
+    font-size: 1.25vw;
+    color: var(--colorone);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.75);
+    transition: all .3s ease;
+}
+.exp-btn:hover{
+    background: var(--colorfour);
+    color: #FFF;
+}
+#fresher{
+    background: var(--colorfour);
+    color: #FFF;
+}
+
+.fileupload{
+    position: relative;
+    width: 20%;
+    padding: 1.5vh 1vw;
+    border-radius: 12px;
+    background: aqua;
+    color: #000;
+    display: grid;
+    place-content: center;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.75);
+}
+
+.agreement-row{
+    position: relative;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 2vw auto;
+    grid-template-columns: 7vh auto;
+}
+input[type="checkbox"]{
+    position: relative;
+    top: 0;
+    left: 2.5vw;
+    width: unset;
+    margin: unset;
+    padding: unset;
+    box-shadow: none;
+    margin-right: 2vw;
+}
+.agreement-label{
+    text-align: center;
+}
+
+
+
+.bottom{
+    background: none;
+    height: auto;
+}
+.newsletter-container{
+    display: none;
+}
