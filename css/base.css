@@ -206,45 +206,38 @@ nav a{
     font-size: 1.1vw;
     font-weight: 600;
 }
-.category-menu-wrapper{
-    position: absolute;
-    top: .35vw;
-    left: 0;
-    padding: 2rem 0;
-    width: 240px;
-    height: auto;
-    display: none;
-    transition: all .3s ease;
-}
-.nav-course:hover .category-menu-wrapper{
-    display: flex;
-}
 
 .category-menu{
     border-top-left-radius: 0 !important;
 }
 
-.category-link{
-    position: relative;
-}
-
 .dropdown{
-    position: relative;
-    width: 18vw;
+    width: 16vw;
     height: auto;
-    display: flex;
+    padding: 1vh 0;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border-radius: 8px;
     background: var(--light);
-    border-radius: 24px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.125);
+}
+.category-menu{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    display: none;
 }
 
-.dropdown-link{
+
+.nav-course:hover .category-menu{
+    display: flex;
+}
+
+.category{
     position: relative;
     width: 100%;
-    padding: .75vw 2vh;
+    padding: 1.5vh 1vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -252,31 +245,29 @@ nav a{
     color: var(--colorone);
     transition: all .3s ease;
 }
-.dropdown-link:hover{
-    color: #EEAB10;
-}
-.dropdown-link--text{
-    font-size: 1vw;
+.category:hover{
+    color: var(--colorfour);
 }
 
-.category-submenu-wrapper{
+.courses-menu{
     position: absolute;
     top: 0;
-    right: -18vw;
-    width: 18vw;
+    right: -16vw;
     display: none;
-    transition: all .3s ease;
 }
-.dropdown-link:hover .category-submenu-wrapper{
+.category:hover .courses-menu{
     display: flex;
 }
-
-.nav-corporate{
-    text-transform: uppercase;
-    font-weight: 700;
+.course-link{
+    position: relative;
+    padding: 1.5vh 1vw;
+    color: var(--colorone);
+    font-size: 1.125vw;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
-
-
+.course-link:hover{
+    color: var(--colorfour);
+}
 
 
 
