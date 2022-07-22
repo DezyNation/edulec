@@ -24,7 +24,7 @@ function prepareSignin(){
 }
 
 function openAuth(){
-	prepareSignin();
+	prepareSignin();	/*Remove this*/
 	authWrapper.style.display = "grid";
 }
 

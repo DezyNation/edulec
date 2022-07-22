@@ -92,6 +92,25 @@ input, select{
     color: #000;
 }
 
+.tooltip-span{
+    position: relative;
+    left: 6vw;
+}
+.tooltip{
+    position: absolute;
+    top: -7.5vh;
+    right: -14vw;
+    display: none;
+    background: #000;
+    padding: 1vh .5vw;
+    color: #FFF;
+    font-size: .8vw;
+    z-index: 100;
+}
+.tooltip-span:hover .tooltip{
+    display: block;
+}
+
 .text-center{
     width: 100%;
     align-self: center;
@@ -147,6 +166,15 @@ input, select{
     box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.75);
 }
 
+.doc-name{
+    position: relative;
+    margin-top: 1vh;
+    color: #FFF;
+    font-size: .9vw;
+    align-self: center;
+    text-align: center;
+}
+
 .agreement-row{
     position: relative;
     width: 80%;
@@ -168,6 +196,27 @@ input[type="checkbox"]{
     text-align: center;
 }
 
+.submit-btn{
+    position: relative;
+    align-self: center;
+    width: 14vw;
+    padding: 1.5vh 0;
+    display: grid;
+    place-content: center;
+    background: var(--colorfour);
+    color: #FFF;
+    font-size: 1.25vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submit-btn:hover{
+    background: orangered;
+}
 
 
 .bottom{

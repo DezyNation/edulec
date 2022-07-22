@@ -150,39 +150,52 @@
                 <div class="form-row">
                     <div class="form-column">
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                        <input type="text" name="fname" id="fname" placeholder="Type here">
                     </div>
                     <div class="form-column right-column">
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                        <input type="text" name="lname" id="lname" placeholder="Type here">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-column">
                         <label for="eduemail">Email ID Registered with EduLec</label>
-                        <input type="text" name="eduemail" id="eduemail" placeholder="Email ID registered with EduLec">
+                        <input type="email" name="eduemail" id="eduemail" placeholder="Type here">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-column">
-                        <h3 class="label">Document</h3>
-                        <input type="file" name="file" id="file" hidden>
-                        <label for="file" class="fileupload">Browse</label>
+                        <h3 class="label">HSC Certificate</h3>
+                        <input type="file" name="hsccert" id="hsccert" onchange="getHsc(this)" accept=".pdf" hidden>
+                        <label for="hsccert" class="fileupload">Browse</label>
+                        <span class="doc-name" id="hsccertname">No file selected</span>
                     </div>
                     <div class="form-column right-column">
-                        <label for="file">Document</label>
-                        <input type="file" name="file" id="file" hidden>
-                        <label for="file" class="fileupload">Browse</label>
+                        <label for="file">National ID
+                            <span class="tooltip-span">
+                                <i class="bi bi-question-circle-fill"></i>
+                                <p class="tooltip">Upload your Aadhar Card, PAN Card or Driving License (any one).</p>
+                            </span>
+                        </label>
+                        <input type="file" name="natid" id="natid" onchange="getNatId(this)" accept=".pdf" hidden>
+                        <label for="natid" class="fileupload">Browse</label>
+                        <span class="doc-name" id="natidname">No file selected</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="natidnum">National ID Document Number</label>
+                        <input type="text" name="natidnum" id="natidnum" placeholder="Type here">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-column">
                         <label for="wanum">WhatsApp No.</label>
-                        <input type="tel" name="wanum" id="wanum">
+                        <input type="tel" name="wanum" id="wanum" placeholder="Type here">
                     </div>
                     <div class="form-column right-column">
                         <label for="alnum">Alternate No.</label>
-                        <input type="tel" name="alnum" id="alnum">
+                        <input type="tel" name="alnum" id="alnum" placeholder="Type here">
                     </div>
                 </div>
                 <div class="form-row">
@@ -243,17 +256,20 @@
         <div class="form-column">
             <h1 class="form-title text-center"><strong>Resume attracts Recruiter's sights to your profile</strong></h1>
             <h3 class="label text-center">Upload Resume</h3>
-            <input type="file" name="file" id="file" hidden>
-            <label for="file" class="fileupload">Browse</label>
+            <input type="file" name="resume" id="resume" onchange="getResume(this)" accept=".pdf" hidden>
+            <label for="resume" class="fileupload">Browse</label>
+            <span class="doc-name" id="resumename">No file selected</span>
         </div>
         <div class="spacer"></div>
         <div class="agreement-row">
-            <input type="checkbox" name="agreement" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement" required>
             <label for="agreement" class="agreement-label">
                 By clicking on Submit, you agree to our Terms & Conditions and Privacy Policy<br>
                 You may receive SMS notifications from us and can opt out any time.
             </label>
         </div>
+        <div class="spacer"></div>
+        <button class="submit-btn" onclick="alert('Please verify your details and press OK.')">submit</button>
     </form>
 
     
